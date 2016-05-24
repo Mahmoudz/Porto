@@ -7,7 +7,7 @@
 <a name="Introduction"></a>
 ##Introduction
 
-The Freestyle Architecture is a clean and super easy to understand Software Architecture. 
+The Freestyle Architecture is a clean and super easy to understand Software Architecture.
 
 It's designed to be **Modular**, **Agile** and **Easy** to understand. To help Developers write Scalable, Maintainable and Reusable Code.
 
@@ -106,7 +106,7 @@ Each layer contain some components *(components are classes like Models and Cont
 
 The Modules layer contains the Application specific business logic. *(Application functionalities)*.
 
-A Module can be named to the name of a Model, 
+A Module can be named to the name of a Model,
 (example In case of a TO DO App a `Task` would be a Module and a `User` is another Module).
 
 A typical `Module` would contain the following `Components`:
@@ -123,7 +123,7 @@ A typical `Module` would contain the following `Components`:
 - Contracts
 - Info
 
-Each of these `Components` MUST be logically related to each other. 
+Each of these `Components` MUST be logically related to each other.
 
 **Modules Interaction**
 
@@ -139,20 +139,20 @@ Each of these `Components` MUST be logically related to each other.
 <a name="Services"></a>
 ###Services
 
-The `Services` layer holds the reusable code between the different projects. 
+The `Services` layer holds the reusable code between the different projects.
 
-A `Service` can hold a business Logic, and it's the only way to ineract with Third-Party *'Vendor'* Packages. *(To Access any Third-Party Package functionlity, you must have a `Service`).*
+A `Service` can hold a business Logic, and it's the only way to interact with Third-Party *'Vendor'* Packages. *(To Access any Third-Party Package functionality, you must have a `Service`).*
 
 `Services` SHOULD be designed to be reused across different projects. *(Think of them as third-party packages)*.
 
 A `Service` SHOULD contain the reusable code between the `Modules`.
 
-You can have any `Component` in a `Service` depend on the need. So unlike a `Module` every `Service` has a unique strucutre depend on it's functionality and role.
+You can have any `Component` in a `Service` depend on the need. So unlike a `Module` every `Service` has a unique structure depend on it's functionality and role.
 
 
 **Core Services**
 
-The **Core** `Services` are the glue between the application `Modules` and the Framework. All the Module's `Compoenents` should extend or inherit from one of the **Core** `Services`. *(It separates the application code from the Framework code).*
+The **Core** `Services` are the glue between the application `Modules` and the Framework. All the Module's `Components` should extend or inherit from one of the **Core** `Services`. *(It separates the application code from the Framework code).*
 
 One of the major roles that the **Core** `Services` play, is facilitating the upgrading of the framework in the future without affecting a single line of the Application business logic.
 
@@ -209,7 +209,7 @@ An `Endpoint` SHOULD only call the `handle` Function on it's `Controller`.
 A `Controller` has three main roles:
 
 1. reading the request data (user input)
-2. running one or multiple `Tasks` (and passing data to them) 
+2. running one or multiple `Tasks` (and passing data to them)
 3. building a Response (could be built from the data returned by the `Task`)
 
 `Controllers` SHOULD not have any form of business logic. (It SHOULD run a `Task` to perform a business logic).
