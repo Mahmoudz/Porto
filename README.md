@@ -44,7 +44,7 @@
 
 **Porto SAP** is a modern Software Architectural Pattern, designed to help developers organize their Code in a highly maintainable way. Its main goal is to organize the business logic in a reusable way.
 
-Porto is a great alternatives to the standard MVC, for large and long term projects, as they tend to have higher complexity over time.
+Porto is a great alternative to the standard MVC, for large and long term projects, as they tend to have higher complexity over time.
 
 Porto inherits concepts from the MVC, DDD, ADR, Modular and Layered architectures. And it adheres to a list of convenient design principles such as SOLID, OOP, LIFT, DRY, CoC, GRASP, Generalization, High Cohesion and Low Coupling.
 
@@ -195,7 +195,7 @@ The Ship layer can hold two different types of code.
 
 The Ship, contains:
 
-- **Core**: is the engine that auto-register and auto-load all your Container's Components to boots your Application. It contains most of the magical code that handles everything that is not part of your business logic. And mostly contains code that facilitate the development by extending the framework features.
+- **Core**: is the engine that auto-register and auto-load all your Container's Components to boot your Application. It contains most of the magical code that handles everything that is not part of your business logic. And mostly contains code that facilitate the development by extending the framework features.
 - **Parents**: contains parent classes for each Component in your Container. (Adding functions to the parent classes makes them available in every Container). Parents are made to contain shared code between your Containers.
 - **Other Folders**: each of the other folders provide reusable features and classes to be used by all Containers. Such as, Global Exceptions, Application Middleware's, Global Config files, etc.
 
@@ -218,7 +218,7 @@ Containers are wrappers of business logic.
 Here's an example of how to decide creating Containers.
 *"In a TODO App the Task, User and Calendar... each would be in their own Container, were each has its own Routes, Controllers, Models, Exceptions, etc. And each Container is responsible for receiving requests and returning responses from whichever UI (Web, API..) it supports."*
 
-It's advised to use Single Model per Container, however in some cases you may need more.
+It's advised to use a Single Model per Container, however in some cases you may need more.
 Just keep in mind two Models means two Repositories, two Transformers, etc.
 Unless you want to use both Models always together, do split them into 2 Containers.
 
@@ -503,8 +503,8 @@ The Models provide an abstraction for the data, they represent the data in the d
 Models are responsible for how the data should be handled. They make sure that data arrives properly into the backend store (e.g. Database).
 
 #### Principles:
-- A Model SHOULD NOT hold business logic, it can only hold the code and data the represents itself. *(it's relationships with other models, hidden fields, table name, fillable attributes,...)*
-- A single Container MAY contains multiple Models.
+- A Model SHOULD NOT hold business logic, it can only hold the code and data that represents itself. *(it's relationships with other models, hidden fields, table name, fillable attributes,...)*
+- A single Container MAY contain multiple Models.
 - A Model MAY define the Relations between itself and any other Models (in case a relation exist).
 
 
@@ -519,7 +519,7 @@ Their main goal is to separate the application logic from the presentation logic
 #### Principles:
 - Views can only be used from the Web Controllers.
 - Views SHOULD be separated into multiple files and folders based on what they display.
-- A single Container MAY contains multiple Views files.
+- A single Container MAY contain multiple Views files.
 
 
 <a id="Transformers"></a>
@@ -546,7 +546,7 @@ Transformers takes a Model or a group of Models "Collection" and converts it to 
 <a id="Sub-Actions"></a>
 ## Sub-Actions
 
-SubActions are designed eliminate code duplication in Actions. Don't get confused! SubActions do not replace Tasks.
+SubActions are designed to eliminate code duplication in Actions. Don't get confused! SubActions do not replace Tasks.
 
 While Tasks allows Actions to share a piece of functionality. SubActions allows Actions to share a sequence of Tasks.
 
