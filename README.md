@@ -649,6 +649,7 @@ Container
 - **PHP**
 	- [**apiato**](http://apiato.io/) *(A flawless framework for building scalable and testable API-Centric Apps in PHP.)* Built with Laravel.
 	- [**expressive-porto**](https://github.com/lpj145/expressive-porto) *(An implementation of the PORTO architecture with Zend.) Built with Zend-Expressive.*
+	- [**laravel-large-project**](https://github.com/stasyanko/laravel-large-project) *(An example project with detailed documentation built with PORTO pattern to show how to build large projects.)* Built with Laravel.
 - **JavaScript**
 - **Python**
 - **Java**
