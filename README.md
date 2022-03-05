@@ -1096,6 +1096,8 @@ List of projects implementing the Porto architecture.
 		- [**Laravel Large Project**](https://github.com/stasyanko/laravel-large-project) An example project to show how to build large projects with Porto.
 	- **Zend Expressive**
 		- [**Expressive Porto**](https://github.com/lpj145/expressive-porto) An implementation of the Porto architecture with Zend Expressive.
+	- **Symfony**
+		- [**Symfony Porto**](https://github.com/aleksey-anisimov/symfony-porto) An example project to show how to build Symfony projects with Porto.
 - **JavaScript**
 - **Python**
 - **Ruby**
