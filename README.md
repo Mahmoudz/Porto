@@ -1097,6 +1097,8 @@ List of projects implementing the Porto architecture.
 	- **Zend Expressive**
 		- [**Expressive Porto**](https://github.com/lpj145/expressive-porto) An implementation of the Porto architecture with Zend Expressive.
 - **JavaScript**
+	- **Next.js**
+		- [**next-porto-cli**](https://www.npmjs.com/package/next-porto-cli) A cli for next.js to scaffold your application using porto architecture
 - **Python**
 	- **Django** 
 		- [**PyPorto**](https://github.com/discoroveryx/pyporto) A design for building scalable and testable applications with Django Rest Framework.
