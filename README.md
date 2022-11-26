@@ -1094,6 +1094,7 @@ List of projects implementing the Porto architecture.
 	- **Laravel** 
 		- [**Apiato**](http://apiato.io/) **(By the Porto creator)** A PHP Framework for building scalable API's on top of Laravel.
 		- [**Laravel Large Project**](https://github.com/stasyanko/laravel-large-project) An example project to show how to build large projects with Porto.
+		- [**MarketPalace**](https://github.com/samuraee/marketpalace) An Opensource Modular Marketplace Platform.
 	- **Zend Expressive**
 		- [**Expressive Porto**](https://github.com/lpj145/expressive-porto) An implementation of the Porto architecture with Zend Expressive.
 - **JavaScript**
