@@ -73,7 +73,7 @@ Overall, **Porto** is a powerful and flexible software architecture pattern that
 
 <br>
 
-> **Note:** **Porto** started as an experimental architecture designed to solve common problems that web developers face when building large projects. Since its inception, **Porto** has become a beloved software architecture pattern among developers, offering a powerful set of tools for building scalable, maintainable, and reusable software. Feedbacks & Contributions are much appreciated.
+> **Note:** **Porto** started as an experimental architecture designed to solve common problems that web developers face when building large projects. Since its inception, **Porto** has become a beloved software architecture pattern among developers, offering a powerful set of tools for building scalable, maintainable, and reusable software. Feedback & Contributions are much appreciated.
 
 
 
