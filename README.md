@@ -4,14 +4,6 @@
 
 ## Welcome to Porto
 
-
-
-
-
-
-
-
-
 - [Introduction](#Introduction)
 - [Getting Started](#Getting-Started)
 	- [Layers Overview](#Layers-Overview)
@@ -40,15 +32,6 @@
 - [Implementations (Built with Porto)](#Implementations-Projects)
 - [Feedback & Questions](#Feedback)
 
-
-
-
-
-
-
-
-
-
 <a id="Introduction"></a>
 # Introduction
 
@@ -64,36 +47,12 @@ In addition to these foundational concepts, **Porto** also adheres to a set of w
 
 Overall, **Porto** is a powerful and flexible software architecture pattern that offers developers a comprehensive set of tools for building scalable, maintainable, and reusable software. Whether you are working on a small project or a large-scale enterprise application, **Porto** can help you build software that meets your needs today and in the future.
 
-
-
-
-
-
-
-
 <br>
 
 > **Note:** **Porto** started as an experimental architecture designed to solve common problems that web developers face when building large projects. Since its inception, **Porto** has become a beloved software architecture pattern among developers, offering a powerful set of tools for building scalable, maintainable, and reusable software. Feedback & Contributions are much appreciated.
 
-
-
-
-
-
-
-
-
-
-
-
 <a id="Getting-Started"></a>
 # Getting Started
-
-
-
-
-
-
 
 <a id="Layers-Overview"></a>
 ## Layers Overview
@@ -108,15 +67,6 @@ These layers can be created anywhere inside any framework of your choice. For ex
 By separating your application code into these two layers, **Porto** allows you to keep your business logic separate from your infrastructure code, making it easier to maintain and update your application over time. The Containers layer contains all of your application-specific code, while the Ship layer contains shared code that can be used across multiple Containers.
 
 This separation of concerns also allows you to easily scale your application by adding or removing Containers as needed, without affecting the underlying infrastructure code. With **Porto**, you can create a scalable and maintainable software architecture that can adapt to your changing needs over time.
-
-
-
-
-
-
-
-
-
 
 ### Visual Overview
 
@@ -134,15 +84,6 @@ By understanding these three levels of code, you can better organize your codeba
 
 With **Porto**, you can easily separate your code into these different levels and ensure that each level is responsible for the appropriate tasks. This separation of concerns helps to make your code more maintainable and scalable over time.
 
-
-
-
-
-
-
-
-
-
 ### Layers Diagram
 
 To better visualize the relationship between the Containers layer, Ship layer, and the underlying Framework, you can think of the Containers layer as cargo containers that rely on the Ship layer (the cargo ship) which in turn relies on the underlying Framework (the sea). This diagram illustrates the relationship between the different layers:
@@ -150,18 +91,6 @@ To better visualize the relationship between the Containers layer, Ship layer, a
 Containers layer (cargo containers)  >> relies on >>  Ship layer (cargo ship)  >> relies on >>  Framework (sea)
 
 ![](/assets/porto_layers.png)
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Monolithic to "Micro" Services
 
@@ -175,18 +104,7 @@ However, operating multiple services instead of a single Monolithic service can 
 
 With **Porto**, you can create a scalable and flexible software architecture that can adapt to your changing business needs. This allows you to stay ahead of the competition and provide the best possible experience for your users.
 
-
-
-
 <br>
-
-
-
-
-
-
-
-
 
 <a id="Ship-Layer"></a>
 
@@ -204,14 +122,6 @@ By separating the infrastructure code from the business logic code, **Porto** al
 
 
 <br>
-
-
-
-
-
-
-
-
 
 ### Ship Structure
 
@@ -232,14 +142,6 @@ By organizing your code in this way, **Porto** makes it easy to maintain and upd
 
 <br>
 
-
-
-
-
-
-
-
-
 <a id="Containers-Layer"></a>
 
 ## 2) Containers Layer
@@ -252,17 +154,12 @@ By organizing your code in this way, **Porto** helps you to create a more modula
 
 Overall, the Containers layer is the key to building a maintainable and scalable application architecture with **Porto**.
 
-
-
 <br>
-
 
 <a id="Containers"></a>
 ### Containers
 
 A Container is a self-contained module that encapsulates a specific piece of functionality in your application. It can be a feature, a wrapper around a RESTful API resource, or anything else you need.
-
-
 
 #### Example 1:
 
@@ -274,18 +171,11 @@ It's important to keep in mind that two Models mean two Repositories, two Transf
 
 If you have high dependencies between two Containers, placing them in the same Section would make reusing them easier in other projects.
 
-
-
 #### Example 2:
 
 For example, if you look at [Apiato](http://apiato.io), the first project implementing **Porto**, you will notice that Authentication and Authorization are both features provided as Containers.
 
 By breaking down your application into smaller, more manageable Containers, **Porto** makes it easier to develop, test, and maintain your codebase over time.
-
-
-
-
-
 
 <a id="Containers-Structure"></a>
 #### Basic Containers Structure
@@ -326,16 +216,6 @@ Container 2
 	        └── Commands
 ```
 
-
-
-
-
-
-
-
-
-
-
 <a id="Containers-Interactions"></a>
 #### Containers Communication
 
@@ -349,12 +229,6 @@ Containers can communicate with each other in a variety of ways within the same 
 *If you use Event-based communication between Containers, you can use the same mechanism after splitting your codebase into multiple services.*
 
 Note that if you're not familiar with separating your code into Modules/Domains or if you prefer not to use that approach, you can create your entire Application in a single Container. However, this is not recommended and may not be as scalable or maintainable over time.
-
-
-
-
-
-
 
 <a id="Sections"></a>
 ### Sections
@@ -384,14 +258,6 @@ In a typical e-commerce application you can have the following sections: Invento
 
 As you can imagine each of these Sections can be a micro-service by itself. And can be extracted and deployed on its own server based on the traffic it receives.
 
-
-
-
-
-
-
-
-
 <a id="Sections-Interactions"></a>
 ### Sections Communication
 
@@ -400,13 +266,7 @@ As you can imagine each of these Sections can be a micro-service by itself. And 
 
 This architecture allows for a loose coupling between Sections, enabling a more scalable and flexible system. Events and commands can be used to communicate between different Sections, allowing for easy expansion and modification of the system over time.
 
-
 <br>
-
-
-
-
-
 
 <a id="Components"></a>
 # Components
@@ -414,8 +274,6 @@ This architecture allows for a loose coupling between Sections, enabling a more 
 In the Container layer, there's a set of `Components` "Classes" with predefined responsibilities. Every single piece of code you write should live in a Component (class function). Porto defines a huge list of those Components for you, along with a set of guidelines to follow when using them, to keep the development process smooth.
 
 Components ensure consistency and make your code easier to maintain as you already know where each piece of code should be found.
-
-
 
 <a id="Components-Types"></a>
 ### Components Types
@@ -428,17 +286,6 @@ Every Container consists of a number of Components, in **Porto** the Components 
 
 By using these Components, you can create a modular and reusable codebase, making it easier to maintain and modify your code in the future.
 
-
-
-
-
-
-
-
-
-
-
-
 <a id="Main-Components"></a>
 ## 1) Main Components
 
@@ -446,39 +293,16 @@ You must use these Components as they are essential for almost all types of Web 
 
 Routes - Controllers - Requests - Actions - Tasks - Models - Views - Transformers.
 
-
-
 > **Views:** should be used in case the App serves HTML pages.
 > <br>
 > **Transformers:** should be used in case the App serves JSON or XML data.
 
 *For detailed definitions and principles of each of the main components, please refer to the "Some Components Definitions & Principles" section below.*
 
-
-
-
-
-
-
-
-
-
-
-
 <a id="Components-Interaction-Diagram"></a>
 ### 1.1) Main Components Interaction Diagram
 
 ![](/assets/porto_container_interactions.png)
-
-
-
-
-
-
-
-
-
-
 
 <a id="Request-Life-Cycle"></a>
 ### 1.2) The Request Life Cycle
@@ -497,28 +321,10 @@ The Request Life Cycle is the process through which an API call navigates throug
 
 It is important to note that the `Request` object handles request validation and authorization rules, while the `Action` executes the business logic. The `Tasks` can be used to execute reusable subsets of the business logic, with each `Task` responsible for a single portion of the main `Action`. The `View` or `Transformer` is used to build the response that is sent back to the User.
 
-
-
-
-
-
-
 <a id="Components-Details"></a>
 ### 1.3) Some Components Definitions & Principles
 
 > Click on the arrows below to read about each component.
-
-
-
-
-
-
-
-
-
-
-
-
 
 <a id="Routes"></a>
 <Details>
@@ -539,15 +345,6 @@ Routes are responsible for mapping all incoming HTTP requests to their controlle
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
 
 <a id="Controllers"></a>
 <Details>
@@ -583,15 +380,6 @@ As you can see in the example above, the Action `A1` was used by both routes `W-
 
 </Details>
 
-
-
-
-
-
-
-
-
-
 <a id="Requests"></a>
 <Details>
 <Summary>Requests</Summary>
@@ -610,17 +398,6 @@ Requests are the best place to apply validations since the validation rules will
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
-
-
 
 <a id="Actions"></a>
 <Details>
@@ -654,15 +431,6 @@ By looking at all the Actions, you can tell what an application can do.
 
 </Details>
 
-
-
-
-
-
-
-
-
-
 <a id="Tasks"></a>
 <Details>
 <Summary>Tasks</Summary>
@@ -689,16 +457,6 @@ The rule is, whenever you see the possibility of reusing a piece of code from an
 
 </Details>
 
-
-
-
-
-
-
-
-
-
-
 <a id="Models"></a>
 <Details>
 <Summary>Models</Summary>
@@ -716,16 +474,6 @@ Models are responsible for how the data should be handled and ensure that data i
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
-
 
 <a id="Views"></a>
 <Details>
@@ -749,14 +497,6 @@ Views receive data from the Controller and use it to generate the HTML that will
 
 </Details>
 
-
-
-
-
-
-
-
-
 <a id="Transformers"></a>
 <Details>
 <Summary>Transformers</Summary>
@@ -775,15 +515,6 @@ Transformers are responsible for transforming Models into Arrays. They take a Mo
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
 
 <a id="Exceptions"></a>
 <Details>
@@ -805,16 +536,6 @@ Exceptions are a way to handle errors in a well-defined and expected manner. In 
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
-
 
 <a id="Sub-Actions"></a>
 <Details>
@@ -841,22 +562,7 @@ For example, assuming an Action `A1` is calling Task1, Task2 and Task3, and anot
 
 </Details>
 
-
-
-
-
-
-
 <br>
-
-
-
-
-
-
-
-
-
 
 <a id="Optional-Components"></a>
 ## 2) Optional Components
@@ -886,16 +592,7 @@ There are several optional components that can be added to your application base
 
 Feel free to add these components to your application as needed to improve its functionality and maintainability. 
 
-
 <br>
-
-
-
-
-
-
-
-
 
 <a id="Typical-Container-Structure"></a>
 ## Typical Container Structure
@@ -954,28 +651,10 @@ Container
 	            └── Functional
 ```
 
-
-
-
-
-
-
-
-
-
 <a id="Quality-Attributes"></a>
 ## Porto Quality Attributes
 
 > The benefits of using Porto.
-
-
-
-
-
-
-
-
-
 
 <Details>
 <Summary>Modularity & Reusability</Summary>
@@ -995,16 +674,6 @@ When it comes to dependency management, the developer is free to move each Conta
 
 </Details>
 
-
-
-
-
-
-
-
-
-
-
 <Details>
 <Summary>Maintainability & Scalability</Summary>
 <br>
@@ -1018,16 +687,6 @@ Porto has a very organized codebase and zero code coupling. In addition to a cle
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
-
 
 <Details>
 <Summary>Testability & Debuggability</Summary>
@@ -1045,16 +704,6 @@ The key to making testing and debugging easy is not only in the organization of 
 
 </Details>
 
-
-
-
-
-
-
-
-
-
-
 <Details>
 <Summary>Adaptability & Evolvability</Summary>
 <br>
@@ -1069,18 +718,6 @@ The reason this is possible is because Actions are the central organizing princi
 
 </Details>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <Details>
 <Summary>Usability & Learnability</Summary>
 <br>
@@ -1093,16 +730,6 @@ Porto guarantees that you can find any feature implementation in less than 3 sec
 
 </Details>
 
-
-
-
-
-
-
-
-
-
-
 <Details>
 <Summary>Extensibility & Flexibility</Summary>
 <br>
@@ -1114,16 +741,6 @@ Furthermore, Porto's extensibility and flexibility allow for easy integration wi
 ***
 
 </Details>
-
-
-
-
-
-
-
-
-
-
 
 <Details>
 <Summary>Agility & Upgradability</Summary>
@@ -1139,21 +756,7 @@ Additionally, Porto's pluggable UI's make it easy to add or remove interfaces, a
 
 </Details>
 
-
-
-
-
-
 <br>
-
-
-
-
-
-
-
-
-
 
 <a id="Implementations-Projects"></a>
 
@@ -1178,27 +781,12 @@ List of projects implementing the Porto architecture.
 - **C#**
 - ...
 
-
-
-
-
-
-
-
-
-
-
 <a id="Feedback"></a>
 # Get in Touch
 
 > Your feedback is important.
 
 We hope this documentation has provided you with a comprehensive overview of **Porto SAP** and its benefits. As with any software architecture pattern, **Porto** is continually evolving, and we welcome your feedback and contributions to help make it even better. If you have any suggestions or questions about **Porto**, feel free to reach out.
-
-
-
-
-
 
 <a id="Author"></a>
 ## Author
@@ -1219,16 +807,6 @@ We hope this documentation has provided you with a comprehensive overview of **P
   </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
 <a id="Donations"></a>
 ## Donations
 
@@ -1237,12 +815,6 @@ Become a [Github Sponsor](https://github.com/sponsors/Mahmoudz).
 Direct donation via [Paypal](https://paypal.me/mzmmzz).
 <br>
 Become a [Patreon](https://www.patreon.com/zalt).
-
-
-
-
-
-
 
 <a name="License"></a>
 ## License
