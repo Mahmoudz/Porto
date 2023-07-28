@@ -704,10 +704,12 @@ List of projects implementing the Porto architecture.
     - **Laravel** 
         - [**Apiato**](http://apiato.io/) **(By the Porto creator)** A PHP Framework for building scalable API's on top of Laravel.
     - **Zend Expressive**
-        - [**Expressive Porto**](https://github.com/lpj145/expressive-porto) An implementation of the Porto architecture with Zend Expressive.
+        - [**Expressive Porto**](https://github.com/lpj145/expressive-porto)
+    - **Symfony**
+        - [**Symfony Porto**](https://github.com/aleksey-anisimov/symfony-porto)
 - **Python**
     - **Django** 
-        - [**PyPorto**](https://github.com/discoroveryx/pyporto) A design for building scalable and testable applications with Django Rest Framework.
+        - [**PyPorto**](https://github.com/discoroveryx/pyporto)
 
 # Feedback
 
