@@ -6,27 +6,27 @@
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-	- [Layers Overview](#layers-overview)
-	- [Ship Layer](#ship-layer)
-	- [Containers Layer](#containers-layer)
-		- [Containers](#containers)
-		- [Sections](#sections)
+    - [Layers Overview](#layers-overview)
+    - [Ship Layer](#ship-layer)
+    - [Containers Layer](#containers-layer)
+        - [Containers](#containers)
+        - [Sections](#sections)
 - [Components](#components)
-	- [Main Components](#main-components)
-		- [Components Interaction Diagram](#components-interaction-diagram)
-		- [Request Life Cycle](#request-life-cycle)
-		- [Definitions & Principles](#definitions--principles)
-			- [Routes](#routes)
-			- [Controllers](#controllers)
-			- [Requests](#requests)
-			- [Actions](#actions)
-			- [Tasks](#tasks)
-			- [Models](#models)
-			- [Views](#views)
-			- [Transformers](#transformers)
-			- [Exceptions](#exceptions)
-			- [Sub-Actions](#sub-actions)
-	- [Optional Components](#optional-components)
+    - [Main Components](#main-components)
+        - [Components Interaction Diagram](#components-interaction-diagram)
+        - [Request Life Cycle](#request-life-cycle)
+        - [Definitions & Principles](#definitions--principles)
+            - [Routes](#routes)
+            - [Controllers](#controllers)
+            - [Requests](#requests)
+            - [Actions](#actions)
+            - [Tasks](#tasks)
+            - [Models](#models)
+            - [Views](#views)
+            - [Transformers](#transformers)
+            - [Exceptions](#exceptions)
+            - [Sub-Actions](#sub-actions)
+    - [Optional Components](#optional-components)
 - [Typical Container Structure](#typical-container-structure)
 - [Porto Quality Attributes](#porto-quality-attributes)
 - [Implementations (Built with Porto)](#implementations)
@@ -118,8 +118,8 @@ The Ship layer is composed of several types of code that work together to power 
 - **The Core Code**: This is the engine of the ship that auto-registers and auto-loads all your Container's Components to boot your Application. It contains most of the magical code that handles everything that is not part of your business logic, and mostly contains code that facilitates development by extending the framework features.
 
 - **The Containers shared code**:
-	- **Parent Classes**: These are the base classes of each Component in your Container. Adding functions to the Parent Classes makes them available in every Container, and Parents are designed to contain shared code between your Containers.
-	- **Generic Classes**: These are reusable features and classes that can be used by every Container, such as Global Exceptions, Application Middleware, Global Config files, and more.
+    - **Parent Classes**: These are the base classes of each Component in your Container. Adding functions to the Parent Classes makes them available in every Container, and Parents are designed to contain shared code between your Containers.
+    - **Generic Classes**: These are reusable features and classes that can be used by every Container, such as Global Exceptions, Application Middleware, Global Config files, and more.
 
 It's important to note that all of the Container's Components must extend or inherit from the Ship layer, particularly the Parent folder.
 
@@ -159,40 +159,40 @@ By breaking down your application into smaller, more manageable Containers, **Po
 
 #### Basic Containers Structure
 
-```
-Container 1
-	├── Actions
-	├── Tasks
-	├── Models
-	└── UI
-	    ├── WEB
-	    │   ├── Routes
-	    │   ├── Controllers
-	    │   └── Views
-	    ├── API
-	    │   ├── Routes
-	    │   ├── Controllers
-	    │   └── Transformers
-	    └── CLI
-	        ├── Routes
-	        └── Commands
+```markdown
+ContainerA
+├── Actions
+├── Tasks
+├── Models
+└── UI
+    ├── WEB
+    │   ├── Routes
+    │   ├── Controllers
+    │   └── Views
+    ├── API
+    │   ├── Routes
+    │   ├── Controllers
+    │   └── Transformers
+    └── CLI
+        ├── Routes
+        └── Commands
 
-Container 2
-	├── Actions
-	├── Tasks
-	├── Models
-	└── UI
-	    ├── WEB
-	    │   ├── Routes
-	    │   ├── Controllers
-	    │   └── Views
-	    ├── API
-	    │   ├── Routes
-	    │   ├── Controllers
-	    │   └── Transformers
-	    └── CLI
-	        ├── Routes
-	        └── Commands
+ContainerB
+├── Actions
+├── Tasks
+├── Models
+└── UI
+    ├── WEB
+    │   ├── Routes
+    │   ├── Controllers
+    │   └── Views
+    ├── API
+    │   ├── Routes
+    │   ├── Controllers
+    │   └── Transformers
+    └── CLI
+        ├── Routes
+        └── Commands
 ```
 
 #### Containers Communication
@@ -537,53 +537,53 @@ Feel free to add these components to your application as needed to improve its f
 
 ```markdown
 Container
-	├── Actions
-	├── Tasks
-	├── Models
-	├── Values
-	├── Events
-	├── Listeners
-	├── Policies
-	├── Exceptions
-	├── Contracts
-	├── Traits
-	├── Jobs
-	├── Notifications
-	├── Providers
-	├── Configs
-	├── Mails
-	│   ├── Templates	
-	├── Data
-	│   ├── Migrations
-	│   ├── Seeders
-	│   ├── Factories
-	│   ├── Criteria
-	│   ├── Repositories
-	│   ├── Validators
-	│   ├── Transporters
-	│   └── Rules
-	├── Tests
-	│   ├── Unit
-	└── UI
-	    ├── API
-	    │   ├── Routes
-	    │   ├── Controllers
-	    │   ├── Requests
-	    │   ├── Transformers
-	    │   └── Tests
-	    │       └── Functional
-	    ├── WEB
-	    │   ├── Routes
-	    │   ├── Controllers
-	    │   ├── Requests
-	    │   ├── Views
-	    │   └── Tests
-	    │       └── Acceptance
-	    └── CLI
-	        ├── Routes
-	        ├── Commands
-	        └── Tests
-	            └── Functional
+├── Actions
+├── Tasks
+├── Models
+├── Values
+├── Events
+├── Listeners
+├── Policies
+├── Exceptions
+├── Contracts
+├── Traits
+├── Jobs
+├── Notifications
+├── Providers
+├── Configs
+├── Mails
+│   └── Templates
+├── Data
+│   ├── Migrations
+│   ├── Seeders
+│   ├── Factories
+│   ├── Criteria
+│   ├── Repositories
+│   ├── Validators
+│   ├── Transporters
+│   └── Rules
+├── Tests
+│   └── Unit
+└── UI
+    ├── API
+    │   ├── Routes
+    │   ├── Controllers
+    │   ├── Requests
+    │   ├── Transformers
+    │   └── Tests
+    │       └── Functional
+    ├── WEB
+    │   ├── Routes
+    │   ├── Controllers
+    │   ├── Requests
+    │   ├── Views
+    │   └── Tests
+    │       └── Acceptance
+    └── CLI
+        ├── Routes
+        ├── Commands
+        └── Tests
+            └── Functional
 ```
 
 ## Porto Quality Attributes
@@ -688,13 +688,13 @@ Additionally, Porto's pluggable UI's make it easy to add or remove interfaces, a
 List of projects implementing the Porto architecture.
 
 - **PHP**
-	- **Laravel** 
-		- [**Apiato**](http://apiato.io/) **(By the Porto creator)** A PHP Framework for building scalable API's on top of Laravel.
-	- **Zend Expressive**
-		- [**Expressive Porto**](https://github.com/lpj145/expressive-porto) An implementation of the Porto architecture with Zend Expressive.
+    - **Laravel** 
+        - [**Apiato**](http://apiato.io/) **(By the Porto creator)** A PHP Framework for building scalable API's on top of Laravel.
+    - **Zend Expressive**
+        - [**Expressive Porto**](https://github.com/lpj145/expressive-porto) An implementation of the Porto architecture with Zend Expressive.
 - **Python**
-	- **Django** 
-		- [**PyPorto**](https://github.com/discoroveryx/pyporto) A design for building scalable and testable applications with Django Rest Framework.
+    - **Django** 
+        - [**PyPorto**](https://github.com/discoroveryx/pyporto) A design for building scalable and testable applications with Django Rest Framework.
 
 # Feedback
 
