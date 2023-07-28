@@ -327,8 +327,8 @@ It is important to note that the `Request` object handles request validation and
 > Click on the arrows below to read about each component.
 
 <a id="Routes"></a>
-<Details>
-<Summary>Routes</Summary>
+<details>
+<summary>Routes</summary>
 <br/>
 
 Routes are responsible for mapping all incoming HTTP requests to their controller's functions. When an HTTP request hits the Application, the Endpoints match with the URL pattern and make the call to the corresponding Controller function.
@@ -344,11 +344,11 @@ Routes are responsible for mapping all incoming HTTP requests to their controlle
 
 ***
 
-</Details>
+</details>
 
 <a id="Controllers"></a>
-<Details>
-<Summary>Controllers</Summary>
+<details>
+<summary>Controllers</summary>
 <br/>
 
 Controllers are responsible for validating the request, serving the request data, and building a response. *Validation and response happen in separate classes but triggered from the Controller*.
@@ -378,11 +378,11 @@ As you can see in the example above, the Action `A1` was used by both routes `W-
 
 ***
 
-</Details>
+</details>
 
 <a id="Requests"></a>
-<Details>
-<Summary>Requests</Summary>
+<details>
+<summary>Requests</summary>
 <br/>
 
 Requests mainly serve the user input in the application. They are very useful to automatically apply the Validation and Authorization rules.
@@ -397,11 +397,11 @@ Requests are the best place to apply validations since the validation rules will
 
 ***
 
-</Details>
+</details>
 
 <a id="Actions"></a>
-<Details>
-<Summary>Actions</Summary>
+<details>
+<summary>Actions</summary>
 <br/>
 
 Actions represent the Use Cases of the Application *(i.e., the actions that can be performed by a user or software in the application)*.
@@ -429,11 +429,11 @@ By looking at all the Actions, you can tell what an application can do.
 
 ***
 
-</Details>
+</details>
 
 <a id="Tasks"></a>
-<Details>
-<Summary>Tasks</Summary>
+<details>
+<summary>Tasks</summary>
 <br/>
 
 Tasks are classes that hold shared business logic between multiple Actions across different Containers.
@@ -455,11 +455,11 @@ The rule is, whenever you see the possibility of reusing a piece of code from an
 
 ***
 
-</Details>
+</details>
 
 <a id="Models"></a>
-<Details>
-<Summary>Models</Summary>
+<details>
+<summary>Models</summary>
 <br/>
 
 Models provide an abstraction for data and represent the data in the database. (They are the M in MVC).
@@ -473,11 +473,11 @@ Models are responsible for how the data should be handled and ensure that data i
 
 ***
 
-</Details>
+</details>
 
 <a id="Views"></a>
-<Details>
-<Summary>Views</Summary>
+<details>
+<summary>Views</summary>
 <br/>
 
 Views contain the HTML served by your application.
@@ -495,11 +495,11 @@ Views receive data from the Controller and use it to generate the HTML that will
 
 ***
 
-</Details>
+</details>
 
 <a id="Transformers"></a>
-<Details>
-<Summary>Transformers</Summary>
+<details>
+<summary>Transformers</summary>
 <br/>
 
 Transformers, short for Response Transformers, are equivalent to Views but for JSON Responses. While Views take data and represent it in HTML, Transformers take data and represent it in JSON.
@@ -514,11 +514,11 @@ Transformers are responsible for transforming Models into Arrays. They take a Mo
 
 ***
 
-</Details>
+</details>
 
 <a id="Exceptions"></a>
-<Details>
-<Summary>Exceptions</Summary>
+<details>
+<summary>Exceptions</summary>
 <br/>
 
 Exceptions are also a form of output that should be expected (like an API exception) and well defined.
@@ -535,11 +535,11 @@ Exceptions are a way to handle errors in a well-defined and expected manner. In 
 
 ***
 
-</Details>
+</details>
 
 <a id="Sub-Actions"></a>
-<Details>
-<Summary>Sub-Actions</Summary>
+<details>
+<summary>Sub-Actions</summary>
 <br/>
 
 SubActions are designed to eliminate code duplication in Actions. SubActions allow Actions to share a sequence of Tasks, while Tasks allows Actions to share a piece of functionality.
@@ -560,7 +560,7 @@ For example, assuming an Action `A1` is calling Task1, Task2 and Task3, and anot
 
 ***
 
-</Details>
+</details>
 
 <br/>
 
@@ -656,8 +656,8 @@ Container
 
 > The benefits of using Porto.
 
-<Details>
-<Summary>Modularity & Reusability</Summary>
+<details>
+<summary>Modularity & Reusability</summary>
 <br/>
 
 In Porto, your application business logic lives in Containers. Porto Containers are similar in nature to the Modules *(from the Modular architecture)* and Domains *(from the DDD architecture)*.
@@ -672,10 +672,10 @@ When it comes to dependency management, the developer is free to move each Conta
 
 ***
 
-</Details>
+</details>
 
-<Details>
-<Summary>Maintainability & Scalability</Summary>
+<details>
+<summary>Maintainability & Scalability</summary>
 <br/>
 
 Porto aims to reduce maintenance costs by saving developers time. It's structured in a way to ensure code decoupling and forces consistency, which all contribute to its maintainability.
@@ -686,10 +686,10 @@ Porto has a very organized codebase and zero code coupling. In addition to a cle
 
 ***
 
-</Details>
+</details>
 
-<Details>
-<Summary>Testability & Debuggability</Summary>
+<details>
+<summary>Testability & Debuggability</summary>
 <br/>
 
 Extremely adhering to the single responsibility principle by having a single function per class results in having slim classes, which leads to easier testability.
@@ -702,10 +702,10 @@ The key to making testing and debugging easy is not only in the organization of 
 
 ***
 
-</Details>
+</details>
 
-<Details>
-<Summary>Adaptability & Evolvability</Summary>
+<details>
+<summary>Adaptability & Evolvability</summary>
 <br/>
 
 Porto allows for easy accommodation of future changes with minimal effort.
@@ -716,10 +716,10 @@ The reason this is possible is because Actions are the central organizing princi
 
 ***
 
-</Details>
+</details>
 
-<Details>
-<Summary>Usability & Learnability</Summary>
+<details>
+<summary>Usability & Learnability</summary>
 <br/>
 
 Porto prioritizes ease of use and understandability. Its implementation of domain expert language when naming classes and adherence to the single function per class rule allow for quick location of any feature or functionality. This means that you can easily find any Use Case (Action) in your code simply by browsing the files.
@@ -728,10 +728,10 @@ Porto guarantees that you can find any feature implementation in less than 3 sec
 
 ***
 
-</Details>
+</details>
 
-<Details>
-<Summary>Extensibility & Flexibility</Summary>
+<details>
+<summary>Extensibility & Flexibility</summary>
 <br/>
 
 Porto takes future growth into consideration and ensures your code remains maintainable no matter how large the project becomes. Its modular structure, separation of concerns, and organized coupling between internal classes ("Components") allows for modifications to be made without undesirable side effects.
@@ -740,10 +740,10 @@ Furthermore, Porto's extensibility and flexibility allow for easy integration wi
 
 ***
 
-</Details>
+</details>
 
-<Details>
-<Summary>Agility & Upgradability</Summary>
+<details>
+<summary>Agility & Upgradability</summary>
 <br/>
 
 Porto enables quick and easy movement in the development process.
@@ -754,7 +754,7 @@ Additionally, Porto's pluggable UI's make it easy to add or remove interfaces, a
 
 ***
 
-</Details>
+</details>
 
 <br/>
 
