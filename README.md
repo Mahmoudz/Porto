@@ -83,7 +83,7 @@ With **Porto**, you can easily separate your code into these different levels an
 
 To better visualize the relationship between the Containers layer, Ship layer, and the underlying Framework, you can think of the Containers layer as cargo containers that rely on the Ship layer (the cargo ship) which in turn relies on the underlying Framework (the sea). This diagram illustrates the relationship between the different layers:
 
-Containers layer (cargo containers)  >> relies on >>  Ship layer (cargo ship)  >> relies on >>  Framework (sea)
+Containers layer (cargo containers) >> relies on >> Ship layer (cargo ship) >> relies on >> Framework (sea)
 
 ![](/assets/porto_layers.png)
 
@@ -103,11 +103,16 @@ With **Porto**, you can create a scalable and flexible software architecture tha
 
 The Ship layer is a critical component of the **Porto** architecture. It contains the Parent "Base" classes, which are classes extended by every single component, as well as some Utility Code.
 
-The Parent classes in the Ship layer give developers full control over the Container's Components. For example, adding a function to the Base Model class makes it available in every Model in your Containers, saving time and effort.
+The Parent classes in the Ship layer give developers full control over the Container Components.
+For example, adding a function to the Base Model class makes it available in every Model in your Containers,
+saving time and effort.
 
 The Ship layer also plays an important role in separating the Application code from the Framework code. This separation facilitates upgrading the Framework without affecting the Application code, making it easier to maintain and update your application over time.
 
-In **Porto**, the Ship layer is kept slim and focused, containing only the essential Parent classes and utility code. It does not include common reusable functionalities such as Authentication or Authorization, as these functionalities are provided by the Containers. This gives developers more flexibility to customize their application to meet their specific needs.
+In **Porto**, the Ship layer is kept slim and focused, containing only the essential Parent classes and utility code.
+It does not include common reusable functionalities such as Authentication or Authorization,
+as the Containers provide these functionalities.
+This gives developers more flexibility to customize their application to meet their specific needs.
 
 By separating the infrastructure code from the business logic code, **Porto** allows you to keep your application code organized and maintainable, while also providing the flexibility to customize and scale your application as needed.
 
@@ -115,13 +120,14 @@ By separating the infrastructure code from the business logic code, **Porto** al
 
 The Ship layer is composed of several types of code that work together to power your application:
 
-- **The Core Code**: This is the engine of the ship that auto-registers and auto-loads all your Container's Components to boot your Application. It contains most of the magical code that handles everything that is not part of your business logic, and mostly contains code that facilitates development by extending the framework features.
+- **The Core Code**: This is the engine of the ship that auto-registers and autoload all your Container Components to boot your Application. It contains most of the magical code that handles everything that is not part of your business logic, and mostly contains code that facilitates development by extending the framework features.
 
 - **The Containers shared code**:
     - **Parent Classes**: These are the base classes of each Component in your Container. Adding functions to the Parent Classes makes them available in every Container, and Parents are designed to contain shared code between your Containers.
     - **Generic Classes**: These are reusable features and classes that can be used by every Container, such as Global Exceptions, Application Middleware, Global Config files, and more.
 
-It's important to note that all of the Container's Components must extend or inherit from the Ship layer, particularly the Parent folder.
+It's important to note that all the Container Components must extend or inherit from the Ship layer,
+particularly the Parent folder.
 
 When separating the **Core** into an external package, the Ship Parents should extend from the Core Parents (which can be named Abstract, since most of them are supposed to be Abstract Classes). The Ship Parents hold your custom Application shared business logic, while the Core Parents (Abstracts) hold your framework's common code. Essentially, anything that is not business logic should be hidden from the actual Application being developed.
 
@@ -129,7 +135,9 @@ By organizing your code in this way, **Porto** makes it easy to maintain and upd
 
 ## Containers Layer
 
-The Containers layer is the heart of the **Porto** architecture. Here is where the application-specific business logic lives, including all the Application features and functionalities. You'll spend 90% of your time working in this layer, developing new features, and maintaining existing ones.
+The Container layer is the heart of the **Porto** architecture.
+Here is where the application-specific business logic lives, including all the Application features and functionalities.
+You'll spend 90% of your time working in this layer, developing new features, and maintaining existing ones.
 
 One of the main benefits of using **Porto** is that it manages the complexity of a problem by breaking it down into smaller, more manageable Containers. Each Container is designed to encapsulate a specific piece of functionality, making it easier to develop, test, and maintain.
 
@@ -268,7 +276,7 @@ Routes - Controllers - Requests - Actions - Tasks - Models - Views - Transformer
 > <br/>
 > **Transformers:** should be used in case the App serves JSON or XML data.
 
-*For detailed definitions and principles of each of the main components, please refer to the "Some Components Definitions & Principles" section below.*
+*For detailed definitions and principles of each main components, please refer to the "Some Components Definitions & Principles" section below.*
 
 ### Components Interaction Diagram
 
@@ -313,7 +321,8 @@ Routes are responsible for mapping all incoming HTTP requests to their controlle
 <details>
 <summary><a id="controllers">Controllers</a></summary>
 
-Controllers are responsible for validating the request, serving the request data, and building a response. *Validation and response happen in separate classes but triggered from the Controller*.
+Controllers are responsible for validating the request, serving the request data, and building a response.
+*Validation and response happen in separate classes but is triggered from the Controller*.
 
 *The Controllers concept is the same as in MVC (They are the C in MVC), but with limited and predefined responsibilities.*
 
@@ -623,7 +632,8 @@ Porto has a very organized codebase and zero code coupling. In addition to a cle
 
 Extremely adhering to the single responsibility principle by having a single function per class results in having slim classes, which leads to easier testability.
 
-In Porto, each component expects the same type of input and output, which makes testing, mocking, and stabbing very simple.
+In Porto, each component expects the same type of input and output,
+which makes testing, mocking, and stabbing straightforward.
 
 The Porto structure itself makes writing automated tests a smooth process. Each container has a `tests` folder at its root to contain unit tests for its tasks. Additionally, each UI folder has a `tests` folder to contain functional tests (for testing each UI separately).
 
@@ -640,7 +650,10 @@ Porto allows for easy accommodation of future changes with minimal effort.
 
 For example, let's say you have a web app that serves HTML and you decide that you also need a mobile app with an API. Porto's pluggable UI's (WEB, API & CLI) enables you to write the business logic of your application first and then implement a UI to interact with your code. This gives you the flexibility to add interfaces as needed and adapt to future changes with ease.
 
-The reason this is possible is because Actions are the central organizing principle, not the controller, and they can be shared across multiple UI's. Additionally, the UI's are separated from the application business logic and separated from each other within each Container.
+The reason this is possible is that Actions are the central organizing principle, not the controller,
+and they can be shared across multiple UI's.
+Additionally,
+the UI's are separated from the application business logic and separated from each other within each Container.
 
 ***
 
@@ -707,8 +720,8 @@ We hope this documentation has provided you with a comprehensive overview of **P
 <table>
   <tbody>
      <tr>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/mahmoudz.png?s=150">
+        <td style="text-align: center; vertical-align: top">
+            <img alt="author image" width="125" height="125" src="https://github.com/mahmoudz.png?s=150">
             <br/>
             <strong>Mahmoud Zalt</strong>
             <br/>
