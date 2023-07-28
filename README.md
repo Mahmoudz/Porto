@@ -47,7 +47,7 @@ In addition to these foundational concepts, **Porto** also adheres to a set of w
 
 Overall, **Porto** is a powerful and flexible software architecture pattern that offers developers a comprehensive set of tools for building scalable, maintainable, and reusable software. Whether you are working on a small project or a large-scale enterprise application, **Porto** can help you build software that meets your needs today and in the future.
 
-<br>
+<br/>
 
 > **Note:** **Porto** started as an experimental architecture designed to solve common problems that web developers face when building large projects. Since its inception, **Porto** has become a beloved software architecture pattern among developers, offering a powerful set of tools for building scalable, maintainable, and reusable software. Feedback & Contributions are much appreciated.
 
@@ -104,7 +104,7 @@ However, operating multiple services instead of a single Monolithic service can 
 
 With **Porto**, you can create a scalable and flexible software architecture that can adapt to your changing business needs. This allows you to stay ahead of the competition and provide the best possible experience for your users.
 
-<br>
+<br/>
 
 <a id="Ship-Layer"></a>
 
@@ -121,7 +121,7 @@ In **Porto**, the Ship layer is kept slim and focused, containing only the essen
 By separating the infrastructure code from the business logic code, **Porto** allows you to keep your application code organized and maintainable, while also providing the flexibility to customize and scale your application as needed.
 
 
-<br>
+<br/>
 
 ### Ship Structure
 
@@ -140,7 +140,7 @@ When separating the **Core** into an external package, the Ship Parents should e
 By organizing your code in this way, **Porto** makes it easy to maintain and update your application over time, while also allowing you to extend and customize the framework features to meet your specific needs.
 
 
-<br>
+<br/>
 
 <a id="Containers-Layer"></a>
 
@@ -154,7 +154,7 @@ By organizing your code in this way, **Porto** helps you to create a more modula
 
 Overall, the Containers layer is the key to building a maintainable and scalable application architecture with **Porto**.
 
-<br>
+<br/>
 
 <a id="Containers"></a>
 ### Containers
@@ -266,7 +266,7 @@ As you can imagine each of these Sections can be a micro-service by itself. And 
 
 This architecture allows for a loose coupling between Sections, enabling a more scalable and flexible system. Events and commands can be used to communicate between different Sections, allowing for easy expansion and modification of the system over time.
 
-<br>
+<br/>
 
 <a id="Components"></a>
 # Components
@@ -294,7 +294,7 @@ You must use these Components as they are essential for almost all types of Web 
 Routes - Controllers - Requests - Actions - Tasks - Models - Views - Transformers.
 
 > **Views:** should be used in case the App serves HTML pages.
-> <br>
+> <br/>
 > **Transformers:** should be used in case the App serves JSON or XML data.
 
 *For detailed definitions and principles of each of the main components, please refer to the "Some Components Definitions & Principles" section below.*
@@ -329,7 +329,7 @@ It is important to note that the `Request` object handles request validation and
 <a id="Routes"></a>
 <Details>
 <Summary>Routes</Summary>
-<br>
+<br/>
 
 Routes are responsible for mapping all incoming HTTP requests to their controller's functions. When an HTTP request hits the Application, the Endpoints match with the URL pattern and make the call to the corresponding Controller function.
 
@@ -349,7 +349,7 @@ Routes are responsible for mapping all incoming HTTP requests to their controlle
 <a id="Controllers"></a>
 <Details>
 <Summary>Controllers</Summary>
-<br>
+<br/>
 
 Controllers are responsible for validating the request, serving the request data, and building a response. *Validation and response happen in separate classes but triggered from the Controller*.
 
@@ -383,7 +383,7 @@ As you can see in the example above, the Action `A1` was used by both routes `W-
 <a id="Requests"></a>
 <Details>
 <Summary>Requests</Summary>
-<br>
+<br/>
 
 Requests mainly serve the user input in the application. They are very useful to automatically apply the Validation and Authorization rules.
 
@@ -402,7 +402,7 @@ Requests are the best place to apply validations since the validation rules will
 <a id="Actions"></a>
 <Details>
 <Summary>Actions</Summary>
-<br>
+<br/>
 
 Actions represent the Use Cases of the Application *(i.e., the actions that can be performed by a user or software in the application)*.
 
@@ -434,7 +434,7 @@ By looking at all the Actions, you can tell what an application can do.
 <a id="Tasks"></a>
 <Details>
 <Summary>Tasks</Summary>
-<br>
+<br/>
 
 Tasks are classes that hold shared business logic between multiple Actions across different Containers.
 
@@ -460,7 +460,7 @@ The rule is, whenever you see the possibility of reusing a piece of code from an
 <a id="Models"></a>
 <Details>
 <Summary>Models</Summary>
-<br>
+<br/>
 
 Models provide an abstraction for data and represent the data in the database. (They are the M in MVC).
 
@@ -478,7 +478,7 @@ Models are responsible for how the data should be handled and ensure that data i
 <a id="Views"></a>
 <Details>
 <Summary>Views</Summary>
-<br>
+<br/>
 
 Views contain the HTML served by your application.
 
@@ -500,7 +500,7 @@ Views receive data from the Controller and use it to generate the HTML that will
 <a id="Transformers"></a>
 <Details>
 <Summary>Transformers</Summary>
-<br>
+<br/>
 
 Transformers, short for Response Transformers, are equivalent to Views but for JSON Responses. While Views take data and represent it in HTML, Transformers take data and represent it in JSON.
 
@@ -519,7 +519,7 @@ Transformers are responsible for transforming Models into Arrays. They take a Mo
 <a id="Exceptions"></a>
 <Details>
 <Summary>Exceptions</Summary>
-<br>
+<br/>
 
 Exceptions are also a form of output that should be expected (like an API exception) and well defined.
 
@@ -540,7 +540,7 @@ Exceptions are a way to handle errors in a well-defined and expected manner. In 
 <a id="Sub-Actions"></a>
 <Details>
 <Summary>Sub-Actions</Summary>
-<br>
+<br/>
 
 SubActions are designed to eliminate code duplication in Actions. SubActions allow Actions to share a sequence of Tasks, while Tasks allows Actions to share a piece of functionality.
 
@@ -562,7 +562,7 @@ For example, assuming an Action `A1` is calling Task1, Task2 and Task3, and anot
 
 </Details>
 
-<br>
+<br/>
 
 <a id="Optional-Components"></a>
 ## 2) Optional Components
@@ -592,7 +592,7 @@ There are several optional components that can be added to your application base
 
 Feel free to add these components to your application as needed to improve its functionality and maintainability. 
 
-<br>
+<br/>
 
 <a id="Typical-Container-Structure"></a>
 ## Typical Container Structure
@@ -658,7 +658,7 @@ Container
 
 <Details>
 <Summary>Modularity & Reusability</Summary>
-<br>
+<br/>
 
 In Porto, your application business logic lives in Containers. Porto Containers are similar in nature to the Modules *(from the Modular architecture)* and Domains *(from the DDD architecture)*.
 
@@ -676,7 +676,7 @@ When it comes to dependency management, the developer is free to move each Conta
 
 <Details>
 <Summary>Maintainability & Scalability</Summary>
-<br>
+<br/>
 
 Porto aims to reduce maintenance costs by saving developers time. It's structured in a way to ensure code decoupling and forces consistency, which all contribute to its maintainability.
 
@@ -690,7 +690,7 @@ Porto has a very organized codebase and zero code coupling. In addition to a cle
 
 <Details>
 <Summary>Testability & Debuggability</Summary>
-<br>
+<br/>
 
 Extremely adhering to the single responsibility principle by having a single function per class results in having slim classes, which leads to easier testability.
 
@@ -706,7 +706,7 @@ The key to making testing and debugging easy is not only in the organization of 
 
 <Details>
 <Summary>Adaptability & Evolvability</Summary>
-<br>
+<br/>
 
 Porto allows for easy accommodation of future changes with minimal effort.
 
@@ -720,7 +720,7 @@ The reason this is possible is because Actions are the central organizing princi
 
 <Details>
 <Summary>Usability & Learnability</Summary>
-<br>
+<br/>
 
 Porto prioritizes ease of use and understandability. Its implementation of domain expert language when naming classes and adherence to the single function per class rule allow for quick location of any feature or functionality. This means that you can easily find any Use Case (Action) in your code simply by browsing the files.
 
@@ -732,7 +732,7 @@ Porto guarantees that you can find any feature implementation in less than 3 sec
 
 <Details>
 <Summary>Extensibility & Flexibility</Summary>
-<br>
+<br/>
 
 Porto takes future growth into consideration and ensures your code remains maintainable no matter how large the project becomes. Its modular structure, separation of concerns, and organized coupling between internal classes ("Components") allows for modifications to be made without undesirable side effects.
 
@@ -744,7 +744,7 @@ Furthermore, Porto's extensibility and flexibility allow for easy integration wi
 
 <Details>
 <Summary>Agility & Upgradability</Summary>
-<br>
+<br/>
 
 Porto enables quick and easy movement in the development process.
 
@@ -756,7 +756,7 @@ Additionally, Porto's pluggable UI's make it easy to add or remove interfaces, a
 
 </Details>
 
-<br>
+<br/>
 
 <a id="Implementations-Projects"></a>
 
@@ -796,11 +796,11 @@ We hope this documentation has provided you with a comprehensive overview of **P
      <tr>
         <td align="center" valign="top">
             <img width="125" height="125" src="https://github.com/mahmoudz.png?s=150">
-            <br>
+            <br/>
             <strong>Mahmoud Zalt</strong>
-            <br>
+            <br/>
             Twitter: <a href="https://github.com/Mahmoudz">@mahmoudz</a>
-            <br>
+            <br/>
             Site: <a href="http://zalt.me">zalt.me</a>
         </td>
      </tr>
@@ -811,9 +811,9 @@ We hope this documentation has provided you with a comprehensive overview of **P
 ## Donations
 
 Become a [Github Sponsor](https://github.com/sponsors/Mahmoudz).
-<br>
+<br/>
 Direct donation via [Paypal](https://paypal.me/mzmmzz).
-<br>
+<br/>
 Become a [Patreon](https://www.patreon.com/zalt).
 
 <a name="License"></a>
