@@ -748,8 +748,3 @@ Become a [Github Sponsor](https://github.com/sponsors/Mahmoudz).
 Direct donation via [Paypal](https://paypal.me/mzmmzz).
 <br/>
 Become a [Patreon](https://www.patreon.com/zalt).
-
-<a name="License"></a>
-## License
-
-[MIT](https://opensource.org/licenses/MIT) © Mahmoud Zalt
