@@ -46,8 +46,6 @@ In addition to these foundational concepts, **Porto** also adheres to a set of w
 
 Overall, **Porto** is a powerful and flexible software architecture pattern that offers developers a comprehensive set of tools for building scalable, maintainable, and reusable software. Whether you are working on a small project or a large-scale enterprise application, **Porto** can help you build software that meets your needs today and in the future.
 
-<br/>
-
 > **Note:** **Porto** started as an experimental architecture designed to solve common problems that web developers face when building large projects. Since its inception, **Porto** has become a beloved software architecture pattern among developers, offering a powerful set of tools for building scalable, maintainable, and reusable software. Feedback & Contributions are much appreciated.
 
 # Getting Started
@@ -101,8 +99,6 @@ However, operating multiple services instead of a single Monolithic service can 
 
 With **Porto**, you can create a scalable and flexible software architecture that can adapt to your changing business needs. This allows you to stay ahead of the competition and provide the best possible experience for your users.
 
-<br/>
-
 ## Ship Layer
 
 The Ship layer is a critical component of the **Porto** architecture. It contains the Parent "Base" classes, which are classes extended by every single component, as well as some Utility Code.
@@ -114,9 +110,6 @@ The Ship layer also plays an important role in separating the Application code f
 In **Porto**, the Ship layer is kept slim and focused, containing only the essential Parent classes and utility code. It does not include common reusable functionalities such as Authentication or Authorization, as these functionalities are provided by the Containers. This gives developers more flexibility to customize their application to meet their specific needs.
 
 By separating the infrastructure code from the business logic code, **Porto** allows you to keep your application code organized and maintainable, while also providing the flexibility to customize and scale your application as needed.
-
-
-<br/>
 
 ### Ship Structure
 
@@ -134,9 +127,6 @@ When separating the **Core** into an external package, the Ship Parents should e
 
 By organizing your code in this way, **Porto** makes it easy to maintain and update your application over time, while also allowing you to extend and customize the framework features to meet your specific needs.
 
-
-<br/>
-
 ## Containers Layer
 
 The Containers layer is the heart of the **Porto** architecture. Here is where the application-specific business logic lives, including all the Application features and functionalities. You'll spend 90% of your time working in this layer, developing new features, and maintaining existing ones.
@@ -146,8 +136,6 @@ One of the main benefits of using **Porto** is that it manages the complexity of
 By organizing your code in this way, **Porto** helps you to create a more modular and reusable codebase. This makes it easier to scale and maintain your application over time, as well as reducing the amount of code duplication across different parts of your application.
 
 Overall, the Containers layer is the key to building a maintainable and scalable application architecture with **Porto**.
-
-<br/>
 
 ### Containers
 
@@ -253,8 +241,6 @@ As you can imagine each of these Sections can be a micro-service by itself. And 
 - A Section MAY listen to events fired by other Sections. (Commands can be used as an alternative to events.)
 
 This architecture allows for a loose coupling between Sections, enabling a more scalable and flexible system. Events and commands can be used to communicate between different Sections, allowing for easy expansion and modification of the system over time.
-
-<br/>
 
 # Components
 
@@ -520,8 +506,6 @@ For example, assuming an Action `A1` is calling Task1, Task2 and Task3, and anot
 
 </details>
 
-<br/>
-
 ## Optional Components
 
 There are several optional components that can be added to your application based on your specific needs. While not all of them may be necessary, some are highly recommended. These components include:
@@ -548,8 +532,6 @@ There are several optional components that can be added to your application base
 - *And more...*: add additional components as needed
 
 Feel free to add these components to your application as needed to improve its functionality and maintainability. 
-
-<br/>
 
 ## Typical Container Structure
 
@@ -698,8 +680,6 @@ Additionally, Porto's pluggable UI's make it easy to add or remove interfaces, a
 ***
 
 </details>
-
-<br/>
 
 # Implementations
 
