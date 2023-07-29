@@ -32,6 +32,11 @@
 - [Implementations (Built with Porto)](#implementations)
 - [Feedback](#feedback)
 
+> The keywords "MUST", "MUST NOT", "REQUIRED",
+"SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY",
+and "OPTIONAL"
+in this document are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+
 # Introduction
 
 **Porto** is a modern software architectural pattern that offers developers a comprehensive set of guidelines, principles, and patterns to organize their code in a highly maintainable and reusable way. The primary goal of **Porto** is to help developers create software that is scalable, flexible, and easy to maintain over time.
