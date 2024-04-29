@@ -41,13 +41,15 @@ in this document are to be interpreted as described in [RFC 2119](https://datatr
 
 **Porto** is a modern software architectural pattern that offers developers a comprehensive set of guidelines, principles, and patterns to organize their code in a highly maintainable and reusable way. The primary goal of **Porto** is to help developers create software that is scalable, flexible, and easy to maintain over time.
 
-"Simplicity is the ultimate sophistication." - Leonardo da Vinci
+Porto's commitment to the single responsibility principle enhances its compatibility with AI tools like GitHub Copilot, which thrive on clear, well-defined components to assist with feature development, debugging, refactoring and more.
+
+> "Simplicity is the ultimate sophistication." - Leonardo da Vinci
 
 **Porto** is particularly well-suited for medium to large-sized web projects that require a high degree of flexibility and scalability. With **Porto**, developers can build highly scalable monoliths that can be easily split into multiple microservices whenever needed. This approach enables the reuse of business logic or application features across multiple projects, making it an ideal choice for teams that work on a variety of different projects.
 
 It is built on a foundation of several established architectural concepts, including **Domain Driven Design** (DDD), **Modular**, **Micro Kernel**, **Model View Controller** (MVC), **Layered**, and **Action Domain Responder** (ADR) architectures. By drawing on these established concepts, **Porto** provides developers with a reliable and well-tested framework for building software.
 
-In addition to these foundational concepts, **Porto** also adheres to a set of well-established design principles such as **SOLID**, **OOP**, **LIFT**, **DRY**, **CoC**, **GRASP**, **Generalization**, **High Cohesion**, and **Low Coupling**. These principles are designed to ensure that software built using **Porto** is maintainable, scalable, and easy to understand.
+In addition to these foundational concepts, **Porto** also adheres to a set of well-established design principles such as **SOLID**, **OOP**, **LIFT**, **DRY**, **CoC**, **GRASP**, **Generalization**, **High Cohesion**, and **Low Coupling**. These principles are designed to ensure that software built using **Porto** is maintainable, scalable, and easy to understand. 
 
 Overall, **Porto** is a powerful and flexible software architecture pattern that offers developers a comprehensive set of tools for building scalable, maintainable, and reusable software. Whether you are working on a small project or a large-scale enterprise application, **Porto** can help you build software that meets your needs today and in the future.
 
@@ -215,7 +217,8 @@ Containers can communicate with each other in a variety of ways within the same 
 - A Container may depend on one or many other Containers.
 - A Controller may call Tasks from another Container.
 - A Model may have a relationship with a Model from another Container.
-- Other forms of communication are also possible, such as via Events and Commands.
+- A Container must define dependencies with other Containers, by explicitly specifying them in its configuration or through dependency injection.
+- Other forms of communication are also possible, such as via Events, Commands or alternative methods.
 
 *If you use Event-based communication between Containers, you can use the same mechanism after splitting your codebase into multiple services.*
 
