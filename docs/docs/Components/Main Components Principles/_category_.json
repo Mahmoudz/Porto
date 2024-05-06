@@ -1,0 +1,8 @@
+{
+  "label": "Main Components",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "In Porto we utilize a variety of components to streamline software development and maintain a high level of organization. These components include: Routes - Requests - Controllers - Actions - Tasks - Models - Views - Transformers - Exceptions - Sub-Actions."
+  }
+}

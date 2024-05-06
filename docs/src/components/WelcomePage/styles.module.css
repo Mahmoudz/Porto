@@ -1,0 +1,13 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-align: center;
+}
+.welcome h1 {
+  font-size: 3rem;
+  color: #242526;
+}
