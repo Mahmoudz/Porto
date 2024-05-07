@@ -15,13 +15,14 @@ Porto incorporates the well-known MVC components such as `Models`, `Views`, and 
 
 ## Components Types
 
-Every Container consists of a number of Components, in **Porto** the Components are split into two Types: `Main Components` and `Optional Components`.
+In **Porto**, every Container is comprised of a number of specific `Components`, categorized into two main types: `Main Components` and `Optional Components`.
 
-- **Main Components**: the essential Components that you will need for your Container. These Components are mandatory and are meant to be used to achieve the main functionality of your Container. 
+- **Main Components**: These are essential for the core functionality of your Container. They are mandatory and are designed to fulfill the primary roles within the Container. (Example: Actions & Tasks.)
 
-- **Optional Components**: these are Components that you can use to add additional functionality to your Container. They are optional and you can choose to use them or not, depending on your requirements.
+- **Optional Components**: These Components are supplementary and can be integrated based on specific project needs. They are not mandatory, allowing for flexibility in enhancing the Container's functionality. (Example: Middlewares & Repositories.)
 
-By using these Components, you can create a modular and reusable codebase, making it easier to maintain and modify your code in the future.
+This structure promotes a modular and adaptable codebase, simplifying both maintenance and future modifications.
+
 
 
 ## Actions & Tasks

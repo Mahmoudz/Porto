@@ -3,6 +3,8 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "In Porto we utilize a variety of components to streamline software development and maintain a high level of organization. These components include: Routes - Requests - Controllers - Actions - Tasks - Models - Views - Transformers - Exceptions - Sub-Actions."
+    
+      "description": "Porto is strategically designed with essential components that enhance the development of web applications. Its structure ensures a well-organized and durable codebase, making maintenance and code navigation straightforward. Each component is clearly named to intuitively reflect its function, allowing for easy code location and reuse. The key components include Routes, Requests, Controllers, Actions, Tasks, Models, Views, Transformers, Exceptions, and Sub-Actions. While developers are free to select components based on their specific needs, Porto especially advocates for the use of Actions and Tasks. These components can be integrated with various architectural styles, effectively replacing traditional Services. This approach provides a framework for manageable and reusable code, catering to modern development practices."
+    
   }
 }

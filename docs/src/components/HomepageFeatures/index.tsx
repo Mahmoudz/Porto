@@ -14,9 +14,13 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/diagrams/porto_layers.svg").default,
     description: (
       <>
-        Porto divides app code into the Containers and Ship layers, enhancing
-        scalability by ensuring separation of business logic and infrastructure
-        code.
+        <>
+          App code is divided into <strong>Containers</strong> and{" "}
+          <strong>Ship</strong> layers. Containers encapsulate the business
+          logic, while Ship handles all infrastructure-related code, enabling
+          easy scaling on demand by transitioning from monolithic to
+          microservices.
+        </>
       </>
     ),
   },
@@ -26,9 +30,13 @@ const FeatureList: FeatureItem[] = [
       .default,
     description: (
       <>
-        Porto defines a well-structured approach to component placement within
-        the Container layer, each with a single responsibility, simplifying
-        maintenance.
+        <>
+          Business logic in <strong>Containers</strong> is organized into{" "}
+          <strong>Actions</strong> and <strong>Tasks</strong>. Actions initiate
+          sequences of Tasks, each with one public function <code>run()</code>{" "}
+          for a single responsibility, thereby enhancing maintainability and
+          enabling code reusability.
+        </>
       </>
     ),
   },

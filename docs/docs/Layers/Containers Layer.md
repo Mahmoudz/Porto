@@ -10,13 +10,28 @@ One of the main benefits of using **Porto** is that it manages the complexity of
 
 By organizing your code in this way, **Porto** helps you to create a more modular and reusable codebase. This makes it easier to scale and maintain your application over time, as well as reducing the amount of code duplication across different parts of your application.
 
-Inside each container, you'll find a collection of components, particularly Actions and Tasks, which form the backbone of the Porto architecture.
-
-Overall, the Containers layer is the key to building a maintainable and scalable application architecture with **Porto**.
+Inside each container, you'll find a collection of components, particularly Actions and Tasks, which form the backbone of the Porto architecture. Overall, the Containers layer is the key to building a maintainable and scalable application architecture with **Porto**.
 
 <img src="/Porto/img/porto_container_3.png" alt="Porto Components" style={{width: '55%'}} />
 
 Upon opening a container, you should quickly locate what you need. Each box in the preceding image represents a code file, clearly labeled for easy identification. Business logic resides in `Tasks`, each containing a single public function. By examining a file's descriptive name, you can infer its contents, enabling swift navigation through your code.
+
+
+## Splitting Code Between Containers
+
+**Effective Practices for Container Segmentation**
+
+To optimize the Porto architecture, it's crucial to segment your code into containers based on Domain-Driven Design (DDD) principles. This approach focuses on defining clear bounded contexts, which aligns with creating modular and maintainable structures.
+
+**Steps for Segmenting Containers:**
+
+1. **Identify Subdomains**: Recognize distinct areas of functionality within your application.
+2. **Assign Responsibilities**: Assign a clear and unique purpose to each container, ensuring it encapsulates all necessary elements for that domain.
+3. **Promote Independence**: Design containers to operate independently, minimizing dependencies to enhance modularity.
+4. **Refactor Proactively**: Regularly assess and adjust the boundaries of your containers to respond to evolving business needs and maintain clarity.
+
+Following these steps ensures that each container is focused and coherent, supporting the scalability and flexibility of your application architecture.
+
 
 <details>
 <summary>Example 1: TODO App</summary>
