@@ -71,8 +71,8 @@ const AiAssistant = () => {
                 type: "string",
                 description: "The page to navigate to.",
                 enum: [
-                  "docs/",
-                  "docs/Intro",
+                  "/?page=home",
+                  "docs/Intro/?page=get_started",
 
                   "docs/Layers/Layers Overview",
                   "docs/Layers/Containers Layer",
