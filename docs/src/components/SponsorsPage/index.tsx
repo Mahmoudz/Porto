@@ -10,7 +10,7 @@ type SponsorItem = {
 
 const SponsorList: SponsorItem[] = [
   {
-    link: "https://smart.sista.ai/",
+    link: "https://smart.sista.ai/?utm_source=docs_porto&utm_medium=sponsor&utm_campaign=landing_page",
     imageUrl: "/Porto/img/sponsors/sista-ai-logo.png",
     description: (
       <>

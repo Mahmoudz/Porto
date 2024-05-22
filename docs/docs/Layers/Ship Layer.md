@@ -10,22 +10,22 @@ The Ship Layer, an integral aspect of Porto's architecture, serves as the backbo
 
 This critical component of the **Porto** architecture is divided into 4 areas:
 
-### Containers Bay
+### Containers Bay (Base Classes)
 - **Purpose:** Manages core container operations. It provides essential base classes for all container components, ensuring centralized control.
 - **Components:** Abstract Classes, Base Classes, Utilites, Shared Classes...
 - **Note:** *Contains executable code that all Container's Components must inherit from. Designed to enforce architectural conformity and functional integration.*
 
-### Bridge Deck
+### Bridge Deck (Shared Interfaces)
 - **Purpose:** Serves as a central repository for shared definitions and schemas, centralizing critical architectural elements to ensure uniformity and interoperability across Containers.
 - **Components:** Interfaces, Event Contracts, API Specifications, Types...
 - **Note:** *Holds non-executable definitions and structures critical for maintaining consistency and facilitating integration across Containers, without containing code that directly executes.*
 
-### Ship Ballast
+### Ship Ballast (Integration Adapters)
 - **Purpose:** Hosts structural design patterns like adapters and facades to decouple Containers from other application layers. It allows for enhanced modularity by isolating application code from frameworks and external libraries.
 - **Components:** Adapters, Decorators, Facades, Bridges, Proxies, Configurations...
 - **Note:** *Optional part, but highly valuable for dependency management and framework independence.*
 
-### Engine Room
+### Engine Room (Core Services)
 - **Purpose:** Powers the architecture's core features by automatically loading, registering, and injecting dependencies into Container Components.
 - **Components:** Automatic Dependency Injection, Class Loaders, Automatic Component Registrar...
 - **Note:** *Designed to be reusable across applications, enhancing consistency and efficiency.*
