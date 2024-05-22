@@ -5,7 +5,6 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-
 import styles from "./index.module.css";
 import VideoPage from "../components/VideoPage";
 import WelcomePage from "../components/WelcomePage";
@@ -32,10 +31,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className={clsx(
-              "button",
-              styles.bigOrangeButton
-            )}
+            className={clsx("button", styles.bigOrangeButton)}
             to="/docs/Intro"
           >
             Get Started

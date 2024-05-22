@@ -1844,6 +1844,14 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.6.0.tgz#41dd6093d34652cddb5d5bdeee04eafc33826668"
   integrity sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==
 
+"@sista/ai-assistant-react@^2.2.24":
+  version "2.2.24"
+  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-2.2.24.tgz#631dd52e25e861fe2dda5953156c8df3ae4b6077"
+  integrity sha512-eQB1/7AU5UHwwq3yT2GE6Nt0FDiqpVy5Eou75scKh9cJM4ihTLzAbxq95t4kWmVC3ecLeE1tmDE1MMIB31MPPA==
+  dependencies:
+    howler "^2.2.4"
+    react-icons "^5.0.1"
+
 "@slorber/remark-comment@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@slorber/remark-comment/-/remark-comment-1.0.0.tgz#2a020b3f4579c89dec0361673206c28d67e08f5a"
@@ -4586,6 +4594,11 @@ hoist-non-react-statics@^3.1.0:
   dependencies:
     react-is "^16.7.0"
 
+howler@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/howler/-/howler-2.2.4.tgz#bd3df4a4f68a0118a51e4bd84a2bfc2e93e6e5a1"
+  integrity sha512-iARIBPgcQrwtEr+tALF+rapJ8qSc+Set2GJQl7xT1MQzWaVkFebdJhR3alVlSiUf5U7nAANKuj3aWpwerocD5w==
+
 hpack.js@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/hpack.js/-/hpack.js-2.1.6.tgz#87774c0949e513f42e84575b3c45681fade2a0b2"
@@ -7027,6 +7040,11 @@ react-helmet-async@^1.3.0:
     prop-types "^15.7.2"
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
+
+react-icons@^5.0.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.2.1.tgz#28c2040917b2a2eda639b0f797bff1888e018e4a"
+  integrity sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw==
 
 react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
