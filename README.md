@@ -1,10 +1,14 @@
 # Porto (Software Architectural Pattern)
 
-![](/docs/static/img/porto-logo.png)
+<div align="center">
+    <img src="/docs/static/img/porto-logo.png" width="80%"/>
+</div>
 
 ## Welcome to Porto
 
 **Porto** is a modern software architectural pattern that provides a comprehensive set of guidelines, principles, and patterns to organize code for high maintainability and reusability. Its primary aim is to facilitate the development of scalable software, enabling developers to start with a clean monolith and easily transition to microservices. Furthermore, Porto's strict adherence to the single responsibility principle enhances its compatibility with AI tools like GitHub Copilot, which thrive on clear, well-defined classes.
+
+> "Simplicity is the ultimate sophistication." - Leonardo da Vinci
 
 <br>
 <br>
@@ -18,27 +22,32 @@
 
 <br>
 <br>
-<br>
 
-> "Simplicity is the ultimate sophistication." - Leonardo da Vinci
+---
 
 ### Clear Layers
 
 App code is divided into **Containers** and **Ship** layers. Containers encapsulate the business logic, while Ship handles all infrastructure-related code, enabling easy scaling on demand by transitioning from monolithic to microservices.
 
-![](/docs/static/img/diagrams/porto_layers.svg)
+<br>
 
+<div align="center">
+    <img src="/docs/static/img/diagrams/porto_layers.svg" />
+</div>
 
-<p>
-    <img src="/docs/static/img/porto_ship_1.png" width="85%">
-</p>
-
+---
 
 ### Clean Components
 
 Business logic in **Containers** is organized into **Actions** and **Tasks**. Actions initiate sequences of Tasks, each with one public function `run()` for a single responsibility, thereby enhancing maintainability and enabling code reusability.
 
-![](/docs/static/img/diagrams/porto_container_interactions.svg)
+<br>
+
+<div align="center">
+    <img src="/docs/static/img/diagrams/porto_container_interactions.svg" />
+</div>
+
+---
 
 ## Author
 
@@ -54,6 +63,8 @@ Business logic in **Containers** is organized into **Actions** and **Tasks**. Ac
                 <br/>
                 Twitter: <a href="https://github.com/Mahmoudz">@mahmoudz</a>
                 <br/>
+                LinkedIn: <a href="https://www.linkedin.com/in/mahmoudzalt/">mahmoudzalt</a>
+                <br/>
                 Portfolio: <a href="https://zalt.me">zalt.me</a>
                 <br/>
                 </td>
@@ -65,3 +76,6 @@ Business logic in **Containers** is organized into **Actions** and **Tasks**. Ac
 
 I appreciate your support. [Github Sponsor](https://github.com/sponsors/Mahmoudz).
 
+<p>
+    <img src="/docs/static/img/porto_ship_1.png" width="100%">
+</p>
