@@ -1845,9 +1845,9 @@
   integrity sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==
 
 "@sista/ai-assistant-react@^2.2.24":
-  version "2.2.25"
-  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-2.2.25.tgz#bfe9eadae5174c8d523e917c75adaf171cdeef33"
-  integrity sha512-4Hw7OnZ+h2KK/q/keTtoyFuSqiwjDwTuIPyWkBXI4v1Am2Y/inQgzVECPh7gr6yOfRLwDIJT7QGMZfjj7B1JeQ==
+  version "2.2.28"
+  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-2.2.28.tgz#cf178d954e06ee06c2a9955ee0a4683685d0e60b"
+  integrity sha512-YcXMXLM6HZQX3ljJOqdYxFJQaQ3bPxKFmu06k45Iyalt0o9MvWTzQTP+dN+Fia6TAH7gb8WmF0nhjNl1BV+GIQ==
   dependencies:
     howler "^2.2.4"
     react-icons "^5.0.1"

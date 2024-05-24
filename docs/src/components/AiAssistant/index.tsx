@@ -58,18 +58,31 @@ const AiAssistant = () => {
                   "/?page=home",
                   "docs/Intro/?page=get_started",
 
+                  "docs/category/layers",
                   "docs/Layers/Layers Overview",
                   "docs/Layers/Containers Layer",
                   "docs/Layers/Ship Layer",
 
+                  "docs/category/components",
                   "docs/Components/Components Overview",
-                  "docs/Components/Main Components",
+                  "docs/category/main-components?page=main_components",
+                  "docs/Components/Main Components Principles/Routes",
+                  "docs/Components/Main Components Principles/Requests",
+                  "docs/Components/Main Components Principles/Controllers",
+                  "docs/Components/Main Components Principles/Actions",
+                  "docs/Components/Main Components Principles/Tasks",
+                  "docs/Components/Main Components Principles/Models",
+                  "docs/Components/Main Components Principles/Views",
+                  "docs/Components/Main Components Principles/Transformers",
+                  "docs/Components/Main Components Principles/Exceptions",
+                  "docs/Components/Main Components Principles/Sub-Actions",
                   "docs/Components/Optional Components",
 
                   "docs/Basics/Components Interaction",
                   "docs/Basics/Containers Dependencies",
                   "docs/Basics/Data Flow",
 
+                  "docs/category/features",
                   "docs/Features/AI%20Driven Development",
                   "docs/Features/Monolithic to Microservices",
 
