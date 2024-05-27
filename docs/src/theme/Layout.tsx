@@ -15,9 +15,7 @@ const Layout = (props) => {
 
 const Providers = (props) => {
   return (
-    <AiAssistantProvider
-      apiKey={config.SISTA_AI_API_KEY}
-    >
+    <AiAssistantProvider apiKey={config.SISTA_AI_API_KEY} debug={true}>
       <Layout {...props} />
     </AiAssistantProvider>
   );

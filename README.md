@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-	<a href="https://mahmoudz.github.io/Porto/docs/Intro/">
+	<a href="https://mahmoudz.github.io/Porto/">
 	   <img src="/assets/documentation-button.png" width="300px" alt="Porto SAP Documentation"/>
 	</a>
 </p>

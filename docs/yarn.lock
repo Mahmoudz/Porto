@@ -1844,13 +1844,14 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.6.0.tgz#41dd6093d34652cddb5d5bdeee04eafc33826668"
   integrity sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==
 
-"@sista/ai-assistant-react@^2.2.24":
-  version "2.2.28"
-  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-2.2.28.tgz#cf178d954e06ee06c2a9955ee0a4683685d0e60b"
-  integrity sha512-YcXMXLM6HZQX3ljJOqdYxFJQaQ3bPxKFmu06k45Iyalt0o9MvWTzQTP+dN+Fia6TAH7gb8WmF0nhjNl1BV+GIQ==
+"@sista/ai-assistant-react@^2.2.0":
+  version "2.2.32"
+  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-2.2.32.tgz#5e66e1f889c9707284ed0a33404c48214696b273"
+  integrity sha512-jm2BSHZD7KSbeO5cgsQxMO/Y/w9B3wwy8N5bNQlaeW+w7FFKsdvrLPLTiZBW0FiS6MrVpKzh5Yxcq/jZEN7waw==
   dependencies:
     howler "^2.2.4"
     react-icons "^5.0.1"
+    uuid "^9.0.1"
 
 "@slorber/remark-comment@^1.0.0":
   version "1.0.0"
@@ -8245,6 +8246,11 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+uuid@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
+  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 value-equal@^1.0.1:
   version "1.0.1"
