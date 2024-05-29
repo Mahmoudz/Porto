@@ -32,7 +32,7 @@ The Request Life Cycle is the process through which an API call navigates throug
 
 
 
-It is important to note that the `Request` object handles request validation (and optionally, authorization rules, unless they are handled by middlewares.), while the `Action` executes the business logic by calling `Tasts`. The `Tasks` are used to execute reusable subsets of the business logic, with each `Task` responsible for a single portion of the main `Action`. The `View` or `Transformer` is used to build the response that is sent back to the User.
+It is important to note that the `Request` object handles request validation (and optionally, authorization rules, unless they are handled by middlewares.), while the `Action` executes the business logic by calling `Tasks`. The `Tasks` are used to execute reusable subsets of the business logic, with each `Task` responsible for a single portion of the main `Action`. The `View` or `Transformer` is used to build the response that is sent back to the User.
 
 Everything triggered before the controller pertains to the interface with the external system, such as the web or potentially blockchain in the future. Meanwhile, everything after the controller relates to your business logic, which remains reusable regardless of the external system.
 
