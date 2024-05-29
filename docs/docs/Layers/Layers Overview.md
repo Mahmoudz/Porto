@@ -12,9 +12,10 @@ sidebar_position: 1
 
 
 **Porto** Porto facilitates maintaining and updating your application by segregating your code into two layers: business logic in Containers and shared code in Ship. This approach ensures easy scalability without impacting underlying infrastructure, fostering a scalable and adaptable software architecture.
+
 ## Layers Diagram
 
-<img src="/Porto/img/diagrams/porto_layers.svg" alt="Porto Components" style={{width: '100%'}} />
+<img src="/Porto/img/diagrams/porto_layers.svg" alt="Porto Layers" style={{width: '100%'}} />
 
 <br/>
 <br/>

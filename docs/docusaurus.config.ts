@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Porto SAP',
   tagline: 'Modern Software Architectural Pattern',
-  favicon: 'img/sponsors/sista-ai-icon.png',
+  favicon: 'img/porto-favicon.png',
 
   // Set the production url of your site here
   url: 'https://mahmoudz.github.io',
