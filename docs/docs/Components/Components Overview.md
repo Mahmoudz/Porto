@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Components Overview
 
-In the Container layer, Porto organizes code into `Components`, which are classes with specific roles and responsibilities. All code you develop is structured within these Components, ensuring that each class function has a clear purpose. 
+In the Container layer, Porto organizes code into `Components`, which are classes with specific roles and responsibilities. You can think of these Components as parcels within a container, each encapsulating specific code and functionality. All code you develop is structured within these Components, ensuring that each class function has a clear purpose. 
 
 Porto incorporates the well-known MVC components such as `Models`, `Views`, and `Controllers`, and enhances them with powerful additions like `Actions` and `Tasks`.
 

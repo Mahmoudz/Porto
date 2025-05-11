@@ -10,12 +10,11 @@ type SponsorItem = {
 
 const SponsorList: SponsorItem[] = [
   {
-    link: "https://smart.sista.ai/?utm_source=docs_porto&utm_medium=sponsor&utm_campaign=landing_page",
+    link: "https://smart.sista.ai/?utm_source=docs_porto&utm_medium=sponsor&utm_campaign=landing_page_logo",
     imageUrl: "/Porto/img/sponsors/sista-ai-logo.png",
     description: (
       <>
-        <b>Turn Your App Smart with an AI Voice Assistant.</b> <br/>
-        Boost engagement by 70% with a voice UI layer set up in just 10 minutes.
+        <b>Plug-and-Play Voice UI for Apps & Websites — Powered by <a href="https://smart.sista.ai/?utm_source=docs_porto&utm_medium=sponsor&utm_campaign=landing_page_link" target="_blank" style={{ color: '#8098f8' }}>AI Agents</a>.</b>
       </>
     ),
   },
@@ -30,7 +29,7 @@ function Sponsor({ link, imageUrl, description }: SponsorItem) {
         </a>
       </div>
       <div className="text--center padding-horiz--md">
-        
+
         <p>{description}</p>
       </div>
     </div>
