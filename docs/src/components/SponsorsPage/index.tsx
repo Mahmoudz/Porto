@@ -10,11 +10,11 @@ type SponsorItem = {
 
 const SponsorList: SponsorItem[] = [
   {
-    link: "https://smart.sista.ai/?utm_source=docs_porto&utm_medium=sponsor&utm_campaign=landing_page_logo",
+    link: "https://smart.sista.ai/?utm_source=porto&utm_medium=sponsor_banner&utm_campaign=landing_page_logo",
     imageUrl: "/Porto/img/sponsors/sista-ai-logo.png",
     description: (
       <>
-        <b>Plug-and-Play Voice UI for Apps & Websites — Powered by <a href="https://smart.sista.ai/?utm_source=docs_porto&utm_medium=sponsor&utm_campaign=landing_page_link" target="_blank" style={{ color: '#8098f8' }}>AI Agents</a>.</b>
+        <b>Plug-and-Play <a href="https://smart.sista.ai/?utm_source=porto&utm_medium=sponsor_banner&utm_campaign=landing_page" target="_blank" style={{ color: '#8098f8' }}>AI Agents</a> for Apps & Websites</b>
       </>
     ),
   },
@@ -25,12 +25,24 @@ function Sponsor({ link, imageUrl, description }: SponsorItem) {
     <div className={clsx("col col--12")}>
       <div className="text--center">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img src={imageUrl} className={sponsorsStyles.sponsorImg} role="img" />
+          <img
+            src={imageUrl}
+            className={sponsorsStyles.sponsorImg}
+            role="img"
+            style={{
+              maxWidth: '450px',
+              width: '100%',
+              height: 'auto'
+            }}
+          />
         </a>
       </div>
       <div className="text--center padding-horiz--md">
-
-        <p>{description}</p>
+        <p style={{
+          fontSize: 'clamp(1rem, 2vw, 1.2em)',
+          lineHeight: 1.5,
+          margin: '1rem 0'
+        }}>{description}</p>
       </div>
     </div>
   );
