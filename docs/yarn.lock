@@ -1858,10 +1858,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.6.0.tgz#41dd6093d34652cddb5d5bdeee04eafc33826668"
   integrity sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==
 
-"@sista/ai-assistant-react@^3.3.18":
-  version "3.3.18"
-  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-3.3.18.tgz#8214dcbef025fb6dbd30decd805e686aad2ef741"
-  integrity sha512-X2fcVYpmqQoSfQLugYw3tLei4Y+1eLK7PDjsxOPkah3TJ1zEfgdbW4VsBIHkK+pWtsPBu0DDSJbv5EMFmtcLNQ==
+"@sista/ai-assistant-react@^3.3.21":
+  version "3.3.21"
+  resolved "https://registry.yarnpkg.com/@sista/ai-assistant-react/-/ai-assistant-react-3.3.21.tgz#3a99badeebf113881f3f6a30f1eafa3f58e27704"
+  integrity sha512-2dLUjQ7j0I4DFjLuYxJAQo2Y3npKz75VGQ+lb7eRl1+JSNzWwgXKNfkXgyVf8jr/eq6183N6LWH3L8gB/ReONQ==
   dependencies:
     "@testing-library/dom" "^10.4.0"
     react-icons "^4.10.0"
