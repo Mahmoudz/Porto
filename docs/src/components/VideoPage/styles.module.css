@@ -1,7 +1,7 @@
 .videoBackground {
   position: relative;
   width: 100%;
-  height: 55vh;
+  height: 65vh;
   overflow: hidden;
 }
 
@@ -40,11 +40,12 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  opacity: 0.4;
 }
 
 .content h1 {
   color: var(--ifm-color-primary);
-  font-size: 3em;
+  font-size: 3.3em;
 }
 
 /* For tablets: */

@@ -29,6 +29,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle" style={{ marginTop: '-1rem' }}>For Human & AI Collaboration!</p>
         <div className={styles.buttons}>
           <Link
             className={clsx("button", styles.bigOrangeButton)}
