@@ -16,6 +16,7 @@ const Providers = (props) => {
   return (
     <AiAssistantProvider
       apiKey={config.SISTA_AI_API_KEY}
+			// debug="mega-debugger-on"
       // apiKey={config.SISTA_AI_API_KEY_DEV}
       // apiUrl="http://localhost:3077"
     >
