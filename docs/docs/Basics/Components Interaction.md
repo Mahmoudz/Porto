@@ -8,7 +8,7 @@ Components in Porto like in many other architectures can interact with each othe
 
 ## Components Interaction Diagram
 
-![](/img/diagrams/porto_container_interactions.svg)
+![Porto Components interaction diagram](/img/diagrams/porto_container_interactions.svg)
 
 
 

@@ -4,9 +4,9 @@ sidebar_position: 3
 
 # Ship Layer
 
-The Ship Layer, an integral aspect of Porto's architecture, serves as the backbone for system organization and flexibility. Divided into few areas, it empowers developers to centralize control, decouple application code, and optimize resource management, ultimately facilitating streamlined development and maintenance processes
+The Ship Layer, an integral aspect of Porto's architecture, serves as the backbone for system organization and flexibility. Divided into a few areas, it empowers developers to centralize control, decouple application code, and optimize resource management, ultimately facilitating streamlined development and maintenance processes.
 
-![](/img/porto_ship_4.png)
+![Porto Ship layer diagram](/img/porto_ship_4.png)
 
 This critical component of the **Porto** architecture is divided into 4 areas:
 

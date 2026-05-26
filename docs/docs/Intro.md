@@ -35,7 +35,7 @@ Refer to the cargo ship image for a visual representation of the layer relations
 
 <br/>
 <br/>
-![](/img/porto_container_1.png)
+![Porto Container layer diagram](/img/porto_container_1.png)
 <br/>
 <br/>
 
