@@ -83,4 +83,4 @@ Upgrading the framework is straightforward due to the complete separation betwee
 Additionally, Porto's pluggable UI's make it easy to add or remove interfaces, and its modular structure enables adding new features or modifying existing ones without causing negative impacts on other parts of the codebase. This agility and upgradability make Porto a great choice for projects that require flexibility and adaptability to future changes.
 
 
-<img src="/Porto/img/porto_ship_2.png" alt="Porto Components" style={{width: '100%'}} />
+<img src="/img/porto_ship_2.png" alt="Porto Components" style={{width: '100%'}} />

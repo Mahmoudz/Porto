@@ -16,6 +16,6 @@ sidebar_position: 7
 
 
 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-    <img src="/Porto/img/porto_components_2.png" alt="Porto Components" style={{width: '20%'}} />
-    <img src="/Porto/img/porto_components_2.png" alt="Porto Components" style={{width: '20%'}} />
+    <img src="/img/porto_components_2.png" alt="Porto Components" style={{width: '20%'}} />
+    <img src="/img/porto_components_2.png" alt="Porto Components" style={{width: '20%'}} />
 </div>

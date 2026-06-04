@@ -33,7 +33,7 @@ This critical component of the **Porto** architecture is divided into 4 areas:
 <br/>
 <br/>
 
-<img src="/Porto/img/diagrams/porto_layers.svg" alt="Porto Components" style={{width: '100%'}} />   
+<img src="/img/diagrams/porto_layers.svg" alt="Porto Components" style={{width: '100%'}} />   
 
 <br/>
 <br/>

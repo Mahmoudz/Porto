@@ -10,7 +10,7 @@ Porto incorporates the well-known MVC components such as `Models`, `Views`, and 
 
 ## Components Diagram
 
-<img src="/Porto/img/diagrams/porto_container_interactions.svg" alt="Porto Components" style={{width: '100%'}} />
+<img src="/img/diagrams/porto_container_interactions.svg" alt="Porto Components" style={{width: '100%'}} />
 
 <br/>
 <br/>
@@ -76,5 +76,5 @@ The convention is to append the component type to the fully descriptive name, su
 These examples illustrate how Actions and Tasks are named in the Porto architecture. This standardized approach not only maintains consistency across your codebase but also simplifies maintenance, as the organization and purpose of each piece of code are clearly defined from the outset.
 
 
-<img src="/Porto/img/porto_container_2.png" alt="Porto Components" style={{width: '80%'}} />
+<img src="/img/porto_container_2.png" alt="Porto Components" style={{width: '80%'}} />
 

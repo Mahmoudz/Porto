@@ -29,7 +29,7 @@ Porto offers a variety of optional components that you can integrate into your a
 
 Feel free to add these components to your application as needed to improve its functionality and maintainability. 
 
-<img src="/Porto/img/porto_components_1.png" alt="Porto Components" style={{width: '40%'}} />
+<img src="/img/porto_components_1.png" alt="Porto Components" style={{width: '40%'}} />
 
 ## Typical Container Structure
 

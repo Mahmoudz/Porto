@@ -12,7 +12,7 @@ By organizing your code in this way, **Porto** helps you to create a more modula
 
 Inside each container, you'll find a collection of components, particularly Actions and Tasks, which form the backbone of the Porto architecture. Overall, the Containers layer is the key to building a maintainable and scalable application architecture with **Porto**.
 
-<img src="/Porto/img/porto_container_3.png" alt="Porto Components" style={{width: '55%'}} />
+<img src="/img/porto_container_3.png" alt="Porto Components" style={{width: '55%'}} />
 
 Upon opening a container, you should quickly locate what you need. Each box in the preceding image represents a code file, clearly labeled for easy identification. Business logic resides in `Tasks`, each containing a single public function. By examining a file's descriptive name, you can infer its contents, enabling swift navigation through your code.
 

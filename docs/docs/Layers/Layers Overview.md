@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ## Layers Diagram
 
-<img src="/Porto/img/diagrams/porto_layers.svg" alt="Porto Layers" style={{width: '100%'}} />
+<img src="/img/diagrams/porto_layers.svg" alt="Porto Layers" style={{width: '100%'}} />
 
 <br/>
 <br/>

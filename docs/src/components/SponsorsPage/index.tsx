@@ -11,7 +11,7 @@ type SponsorItem = {
 const SponsorList: SponsorItem[] = [
   {
     link: "https://sistava.com/?utm_source=porto&utm_medium=sponsor_banner&utm_campaign=landing_page_logo",
-    imageUrl: "/Porto/img/sponsors/sistava-logo.png",
+    imageUrl: "/img/sponsors/sistava-logo.png",
     description: (
       <>
         <b>Hire <a href="https://sistava.com/?utm_source=porto&utm_medium=sponsor_banner&utm_campaign=landing_page" target="_blank" style={{ color: '#8098f8' }}>AI Employees</a> to Run Your Business</b>

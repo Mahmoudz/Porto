@@ -8,10 +8,10 @@ const config: Config = {
   favicon: 'img/porto-favicon.png',
 
   // Set the production url of your site here
-  url: 'https://mahmoudz.github.io',
+  url: 'https://porto.zalt.me',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Porto',
+  // Served at the root of the porto.zalt.me custom domain.
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
