@@ -82,21 +82,16 @@ const config: Config = {
       },
       items: [
         {
-          type: 'dropdown',
-          label: 'Editions',
+          type: 'custom-editionDropdown',
           position: 'left',
           items: [
             {
-              type: 'doc',
-              docId: 'Intro',
-              docsPluginId: 'default',
-              label: 'Porto for Humans',
+              href: '/docs/Intro',
+              label: 'for Humans',
             },
             {
-              type: 'doc',
-              docId: 'Intro',
-              docsPluginId: 'ai',
-              label: 'Porto for AI',
+              href: '/ai/Intro',
+              label: 'for AI',
             },
           ],
         },
