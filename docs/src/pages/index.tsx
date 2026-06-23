@@ -16,28 +16,32 @@ function HomepageHeader() {
   const headerImage = useBaseUrl("img/porto_ship_1.png");
 
   return (
-    <header
-      className={clsx("hero", styles.heroBanner)}
-      style={{
-        backgroundImage: `url(${headerImage})`,
-        backgroundPosition: "80% center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-      }}
-    >
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className="hero__subtitle" style={{ marginTop: '-1rem' }}>For Human & AI Collaboration!</p>
-        <div className={styles.buttons}>
-          <Link
-            className={clsx("button", styles.bigOrangeButton)}
-            to="/docs/Intro"
-          >
-            Get Started
-          </Link>
+    <header className={clsx("hero", styles.heroBanner)}>
+      <div className={clsx("container", styles.heroInner)}>
+        <div className={styles.heroText}>
+          <Heading as="h1" className={clsx("hero__title", styles.heroTitle)}>
+            {siteConfig.title}
+          </Heading>
+          <p className={clsx("hero__subtitle", styles.heroTagline)}>
+            A Software Architectural Pattern
+          </p>
+          <p className={styles.heroSub}>
+            Porto organizes large applications into clean, reusable building
+            blocks, a modular monolith that scales into microservices as you
+            grow, built for human engineers and AI agents to seamlessly
+            maintain, extend, and evolve.
+          </p>
+          <div className={styles.buttons}>
+            <Link className={clsx("button", styles.heroButton)} to="/docs/Intro">
+              For Humans
+            </Link>
+            <Link className={clsx("button", styles.heroButton)} to="/ai/Intro">
+              For AI
+            </Link>
+          </div>
+        </div>
+        <div className={styles.heroVisual}>
+          <img src={headerImage} alt="Porto container ship" />
         </div>
       </div>
     </header>
@@ -52,8 +56,8 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <WelcomePage />
         <EditionsPage />
+        <WelcomePage />
         <HomepageFeatures />
         <VideoPage />
         <SponsorsPage />
