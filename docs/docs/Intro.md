@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Overview
 
-**Porto** is a modern software architectural pattern providing a robust framework of guidelines, principles, and patterns. It is designed to facilitate the creation of software that is scalable, maintainable, and reusable. Porto allows you to start with a clean monolith and expand to microservices as needed, thanks to its modular structure which facilitates easy scaling and separation of concerns. Its adherence to the single responsibility principle enhances its integration with AI tools like GitHub Copilot, aiding in feature development, debugging, and more.
+**Porto** is a Scalable Software Architectural Pattern providing a robust framework of guidelines, principles, and patterns. It is designed to facilitate the creation of software that is scalable, maintainable, and reusable. Porto allows you to start with a clean monolith and expand to microservices as needed, thanks to its modular structure which facilitates easy scaling and separation of concerns. Its adherence to the single responsibility principle enhances its integration with AI tools like Claude Code, Codex, GitHub Copilot and Cursor aiding in feature development, debugging, and more.
 
 <img src="/img/porto_ship_1.png" alt="Porto Components" style={{width: '100%'}} />
 

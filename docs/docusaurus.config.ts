@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Porto SAP',
-  tagline: 'Modern Software Architectural Pattern',
+  tagline: 'Scalable Software Architectural Pattern',
   favicon: 'img/porto-favicon.png',
 
   // Set the production url of your site here
@@ -37,6 +37,7 @@ const config: Config = {
     [
       'classic',
       {
+        // Default docs instance = "Porto for Humans".
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
@@ -58,6 +59,19 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    // Second docs instance = "Porto for AI" (separate product, separate tree).
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ai',
+        path: 'docs-ai',
+        routeBasePath: 'ai',
+        sidebarPath: './sidebarsAi.ts',
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/porto-logo.png',
     navbar: {
@@ -67,13 +81,25 @@ const config: Config = {
         src: 'img/porto-logo.png',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Editions',
+          position: 'left',
+          items: [
+            {
+              type: 'doc',
+              docId: 'Intro',
+              docsPluginId: 'default',
+              label: 'Porto for Humans',
+            },
+            {
+              type: 'doc',
+              docId: 'Intro',
+              docsPluginId: 'ai',
+              label: 'Porto for AI',
+            },
+          ],
+        },
         {
           href: 'https://github.com/Mahmoudz/Porto',
           label: 'GitHub',

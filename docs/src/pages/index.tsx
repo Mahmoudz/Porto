@@ -8,6 +8,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./index.module.css";
 import VideoPage from "../components/VideoPage";
 import WelcomePage from "../components/WelcomePage";
+import EditionsPage from "../components/EditionsPage";
 import SponsorsPage from "../components/SponsorsPage";
 
 function HomepageHeader() {
@@ -47,11 +48,12 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Welcome to the Future of Backend Engineering ${siteConfig.title}`}
-      description="Porto SAP: Modern Software Architectural Pattern"
+      description="Porto SAP: Scalable Software Architectural Pattern"
     >
       <HomepageHeader />
       <main>
         <WelcomePage />
+        <EditionsPage />
         <HomepageFeatures />
         <VideoPage />
         <SponsorsPage />
