@@ -12,7 +12,7 @@ export default function VideoSection(): JSX.Element {
         Your browser does not support the video tag.
       </video>
       <div className={styles.content}>
-        <h1>Start Building Scalable, Maintainable, and Future-Proof Apps!</h1>
+        <h1>Build Scalable and Maintainable Backend Systems</h1>
       </div>
     </div>
   );

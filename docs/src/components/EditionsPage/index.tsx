@@ -19,7 +19,7 @@ const EDITIONS: Edition[] = [
     points: [
       'Human-readable structure and naming',
       'Full manual control over every line',
-      'Built for high-trust code — banking, aerospace, security-critical',
+      'Built for banking, aerospace, security-critical code',
       'AI assists you, but you make the call',
     ],
     ctaLabel: 'Read the docs',
