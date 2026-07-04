@@ -8,8 +8,8 @@ If it lives in a project, the code here should **follow Porto's architecture and
 
 Porto ships in two editions. Pick by **who writes the code**, then read only that edition's docs:
 
-- **Porto for Humans** -> [`docs/docs/`](docs/docs/) - code people read, review, and extend by hand (AI assisting). Start at [`docs/docs/Intro.md`](docs/docs/Intro.md).
-- **Porto for AI** -> [`docs/docs-ai/`](docs/docs-ai/) - codebases written and maintained primarily by AI agents: fewer files, fewer tokens. Start at [`docs/docs-ai/Intro.md`](docs/docs-ai/Intro.md).
+- **Porto SAP** -> [`docs/docs/`](docs/docs/) - code people read, review, and extend by hand (AI assisting). Start at [`docs/docs/Intro.md`](docs/docs/Intro.md).
+- **Porto AI** -> [`docs/docs-ai/`](docs/docs-ai/) - codebases written and maintained primarily by AI agents: fewer files, fewer tokens. Start at [`docs/docs-ai/Intro.md`](docs/docs-ai/Intro.md).
 
 Unsure which the project uses? Ask the user.
 

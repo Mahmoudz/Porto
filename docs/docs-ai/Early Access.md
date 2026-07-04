@@ -5,7 +5,7 @@ sidebar_label: Early Access
 
 # Early Access
 
-**Porto for AI** is in private testing. The architecture is complete and in use, but it is not published openly yet. Access is shared directly, one team at a time.
+**Porto AI** is in private testing. The architecture is complete and in use, but it is not published openly yet. Access is shared directly, one team at a time.
 
 If you want in early, reach out and I'll walk you through it: the structure, the conventions, and how to set up your codebase so agents can build, debug, and maintain it on autopilot.
 

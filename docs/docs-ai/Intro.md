@@ -3,64 +3,81 @@ sidebar_position: 1
 sidebar_label: Introduction
 ---
 
-# Porto for AI
+# Porto AI
 
-> **Status:** Private testing. The full specification is being written and published incrementally. This page is the vision; the architecture, diagrams, and reference implementations are on the way.
+**An edition of the Porto architecture designed for codebases that AI agents write, maintain, and evolve, not humans.** Same core idea as Porto, self-contained reusable units, but the structure is shaped for how agents read and edit code: fewer files, less indirection, token-efficient layouts, and machine-readable definitions instead of prose.
+
+At its core it is an architecture. But the right foundation changes everything built on top of it, how you test, branch, observe, automate, even how you comment, so this edition also takes a position on how a single engineer and a team of agents run a large codebase. **The architecture is documented here; the practices built on it are shared directly.**
+
+:::tip Which edition is this?
+**Porto AI** (this edition) is for teams who let AI agents own the codebase. If you'd rather write and review the code by hand, see **[Porto SAP](/docs/Intro)**.
+:::
+
+> **Status:** Private testing. The architecture is complete and in use; the full specification, diagrams, and reference implementations are being published incrementally. This page is the map. See **[Early Access](/ai/Early%20Access)** to get in before the public release.
 
 > The terms "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL" in this document are defined as per [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-:::tip Which edition is this?
-**Porto for AI** (this edition) is built for teams who let AI agents write, maintain, and evolve their codebase. We believe AI-first development is where the industry is heading, and that architecture should be designed for agents from the start. If you'd rather write and own the code by hand, see **[Porto for Humans](/docs/Intro)**.
-:::
+## What it is
 
-## Overview
+Porto AI keeps Porto's foundation, a codebase split into **self-contained, reusable units** with clear boundaries, and reshapes the layout around the reader that now writes most of the code: the agent.
 
-**Porto for AI** is an edition of the Porto architecture designed for codebases that are written and maintained primarily by AI agents. It keeps Porto's core idea, a codebase organized into self-contained, reusable units, but optimizes the structure for how agents read and edit code: fewer files, less indirection, token-efficient layouts, and machine-readable definitions instead of prose docs.
+In practice that means:
 
-**Compatible with the coding agents you already use:** Claude Code, Codex, GitHub Copilot, and Cursor. Porto for AI is agent-agnostic, it shapes the codebase, not the tool you drive it with.
+- **A flat, predictable structure.** Units live where an agent expects them, not buried in deep hierarchies built for human browsing. Fewer folders to traverse, fewer hops to reach the code an edit touches.
+- **Everything an edit needs in reach.** Logic, types, and configuration for a unit sit together instead of being spread thin across many files "so each file stays small." One unit, one place.
+- **Machine-readable definitions over prose docs.** The architecture ships with structured context and agent skills, the rules of the codebase in a form an agent consumes directly, so it understands conventions without being fed paragraphs of documentation.
+- **Density over decoration.** Names say what a thing is. Structure is explicit and unambiguous. Nothing is softened for human reading at the cost of a token or a round trip.
 
-## Why a separate edition
+**Agent-agnostic.** Porto AI shapes the codebase, not the tool you drive it with. It works with the coding agents you already use, Claude Code, Codex, GitHub Copilot, and Cursor, because the optimization lives in the repository, not the assistant.
 
-[Porto for Humans](/docs/Intro) is built around code a person reads, reviews, and controls. That constraint shapes everything: layered structure, descriptive naming, single-responsibility files, deep folder hierarchies that map to how humans think.
+## Why it exists
 
-AI agents do not have that constraint. They have different ergonomics, different costs, and different failure modes than human developers:
+You cannot optimize one codebase for two different readers. Code that is easy for a **human** to read is shaped by human constraints, descriptive ceremony, deep hierarchies, indirection that keeps any one file small. Code that is efficient for an **agent** is shaped by the opposite, fewer files, less traversal, everything in reach. Optimize for one and you pay for it with the other.
 
-- They read whole trees at once, not file by file.
-- Every file traversal and every clarification round costs tokens.
-- Deep nesting and indirection that aid human comprehension slow an agent down.
-- They do not need code simplified for human reading; they need it dense, explicit, and unambiguous.
+Agents also fail differently than humans. They read whole trees at once, not file by file. Every traversal and every clarification round costs tokens. Deep nesting that aids human comprehension slows an agent down.
 
-**Porto for AI** is a separate architecture designed from that reality. It is not version 2 of Porto for Humans, and it does not replace it. The two editions coexist, each optimized for who actually writes and maintains the code.
+Porto SAP is built for the first reader. **Porto AI is built for the second**, from that reality, not adapted to it. It is not version 2 of Porto SAP, and it does not replace it. The two coexist, each optimized for who actually writes and maintains the code.
 
-## LLMs + Porto = Efficiency
+> For the belief behind this, why the author has changed and why we commit to the agent, see the **[Manifesto](/ai/Manifesto)**.
 
-You cannot optimize one codebase for two different readers. Code written to be easy for a human to read, review, and reason about is shaped by human constraints: descriptive ceremony, deep hierarchies, indirection that spreads logic thin so any one file stays small. Code written to be efficient for an agent is shaped by different constraints: fewer files, less traversal, density over decoration, everything an edit needs in reach. Optimize for one and you pay for it with the other. There is no layout that is best for both at once, so you have to pick.
+## Principles
 
-Most code is now written by agents, and that share only grows. So we pick the agent. **Porto for AI** is the Porto architecture redesigned for the reader that actually writes the code: fewer files, less indirection, token-efficient layouts, and machine-readable definitions instead of prose for a human to read. Less surface to load, fewer hops to understand, fewer cycles to change. The human edition stays for the code humans still own by hand; this edition is built so an agent moves through the codebase at full speed.
+- **Optimized for agents, not human reading.** Name things as they are; don't trade precision for friendliness.
+- **Fewer files, fewer hops.** Flat where flat helps, grouped where grouping scales, never deep for the sake of "organization."
+- **Token-efficient by design.** Less surface to load, fewer round trips to understand, fewer debugging cycles.
+- **Agent-readable, not just human-readable.** Ship machine-consumable definitions (skills / structured context), not prose for a human to interpret.
+- **Built for autopilot.** The target is autonomous feature work, debugging, and maintenance with minimal human steering.
 
-## Principles (high level)
+## What a proper foundation changes
 
-- **Optimized for agents, not human reading.** We name things as they are. We don't trade precision for friendliness.
-- **Fewer files, fewer hops.** Flatter where flat helps; grouped where grouping scales, but never deep for the sake of "organization."
-- **Token-efficient by design.** Less surface area to load, fewer round trips to understand, fewer debugging cycles.
-- **Agent-readable, not just human-readable.** The architecture ships with machine-consumable definitions (skills / structured context) so an agent understands the codebase without being fed prose documentation.
-- **Built for autopilot.** The target is autonomous feature development, debugging, and maintenance with minimal human steering.
+Structure is the load-bearing part, but it is not the whole story. The deeper shift is this: **most of what we call "best practice" was an answer to human constraints. Remove the human as the primary author and the answer changes.** A monorepo can beat microservices and a dozen repos. Deep folder trees, thin files, sparse comments, slow review gates, all of it was tuned for how people read and coordinate, not for how agents do. On the right foundation, one engineer steering a team of agents can maintain a large codebase at a speed that used to take a whole team.
+
+Porto AI carries a point of view on each area below. We go deep on them as the edition is released; the high-level shape:
+
+- **Testing, rethought.** Proper modularity makes the blast radius of a change *local*. You can see exactly what an edit touches and verify just that, instead of re-running the world and hoping.
+- **Branching and version control, rethought.** Workflows built around slow human review are the wrong fit when agents do the writing. When change is cheap and verification is local, how you branch, integrate, and ship changes with it.
+- **Observability as a first-class input.** Collecting enough logs, metrics, and context is no longer optional overhead, it is the signal agents debug and self-correct from. More information is an asset, not noise, capture generously.
+- **Automation by default.** Agents wired to triggers, events, notifications, and schedules, things that audit, watch, and act on their own, instead of waiting to be asked.
+- **Comments as first-class.** In an agent codebase, comments can run half the volume of the code itself, and that is a feature. What reads as "too many comments" for a human is exactly what lets an agent read, reason, and act without guessing.
+- **Optimized for AI, end to end.** Simpler for an agent to read, write, reason about, and explain back to you, while staying token-efficient. Optimize for the reader that actually writes the code.
+
+These are not separate disciplines bolted on, they are what this foundation makes possible, and each has to be done well for the whole to work. The detailed playbook is shared directly.
+
+👉 **Want to go deep on any of this? [Book a session at zalt.me](https://zalt.me)** and I'll walk your team through it one-on-one.
 
 ## When to use which edition
 
-| Use **Porto for Humans** | Use **Porto for AI** |
+Both editions are valid. AI is the direction of travel, but human-written code is not going away where trust and control are non-negotiable.
+
+| Use **[Porto SAP](/docs/Intro)** | Use **Porto AI** |
 | --- | --- |
 | High-trust, high-stakes code | Full autopilot development |
 | Banking, aerospace, security-critical systems | Fast-moving products and prototypes |
-| You need a human in the loop on every line | You let agents own the implementation |
+| A human in the loop on every line | Agents own the implementation |
 | Manual review is a hard requirement | Token cost and iteration speed dominate |
-
-Both are valid. AI is the direction of travel, but human-written code is not going away where trust and control are non-negotiable.
 
 ## Early access
 
-**Porto for AI is in private testing.** The detailed playbook (structure, conventions, agent skills, and how to make a codebase ultra-efficient for AI agents: less token burn, fewer debugging rounds, faster autonomous delivery) is being documented now and released piece by piece.
+Porto AI is in **private testing**. The detailed playbook, structure, conventions, agent skills, and how to make a codebase ultra-efficient for AI agents, is being released piece by piece.
 
-If you want **exclusive early access** before the public release, or hands-on help making your codebase dramatically more efficient for AI agents, reach out directly.
-
-👉 **Contact me at [zalt.me](https://zalt.me)** to get early access and work with me one-on-one to boost your team's AI development efficiency.
+Want in before the public release, or hands-on help making your codebase dramatically more efficient for agents? **[Reach out for early access →](/ai/Early%20Access)**

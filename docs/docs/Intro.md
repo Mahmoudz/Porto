@@ -7,12 +7,12 @@ sidebar_position: 1
 > The terms "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL" in this document are defined as per [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
 :::tip Which edition is this?
-**Porto for Humans** (this edition) is for teams who read, review, and extend the code themselves, with AI as an assistant, not the author. If you plan to let AI agents build and maintain your entire application, see **[Porto for AI](/ai/Intro)**, an edition shaped around how agents actually work.
+**Porto SAP** (this edition) is for teams who read, review, and extend the code themselves, with AI as an assistant, not the author. If you plan to let AI agents build and maintain your entire application, see **[Porto AI](/ai/Intro)**, an edition shaped around how agents actually work.
 :::
 
 ## Overview
 
-**Porto** is a Scalable Software Architectural Pattern providing a robust framework of guidelines, principles, and patterns. It is designed to facilitate the creation of software that is scalable, maintainable, and reusable. Porto allows you to start with a clean monolith and expand to microservices as needed, thanks to its modular structure which facilitates easy scaling and separation of concerns. Its adherence to the single responsibility principle also makes the codebase easy for AI coding assistants to navigate and contribute to. If AI agents own the bulk of your code, see the [Porto for AI](/ai/Intro) edition.
+**Porto** is a Scalable Software Architectural Pattern providing a robust framework of guidelines, principles, and patterns. It is designed to facilitate the creation of software that is scalable, maintainable, and reusable. Porto allows you to start with a clean monolith and expand to microservices as needed, thanks to its modular structure which facilitates easy scaling and separation of concerns. Its adherence to the single responsibility principle also makes the codebase easy for AI coding assistants to navigate and contribute to. If AI agents own the bulk of your code, see the [Porto AI](/ai/Intro) edition.
 
 <img src="/img/porto_ship_1.png" alt="Porto Components" style={{width: '100%'}} />
 

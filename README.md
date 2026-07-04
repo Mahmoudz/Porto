@@ -12,9 +12,9 @@ Every codebase starts clean and ends tangled. Features pile up, boundaries blur,
 
 Porto now ships in two editions that share one philosophy. Pick based on **who writes the code**:
 
-- **Porto for Humans** is for code that people read, review, and extend by hand, with AI assisting. Built for high-trust, security-critical systems. Read the docs at [porto.zalt.me/docs/Intro](https://porto.zalt.me/docs/Intro).
+- **Porto SAP** is for code that people read, review, and extend by hand, with AI assisting. Built for high-trust, security-critical systems. Read the docs at [porto.zalt.me/docs/Intro](https://porto.zalt.me/docs/Intro).
 
-- **Porto for AI** *(private testing)* is for codebases written and maintained primarily by autonomous AI agents: fewer files, fewer tokens, faster autonomous delivery. Read the docs at [porto.zalt.me/ai/Intro](https://porto.zalt.me/ai/Intro).
+- **Porto AI** *(private testing)* is for codebases written and maintained primarily by autonomous AI agents: fewer files, fewer tokens, faster autonomous delivery. Read the docs at [porto.zalt.me/ai/Intro](https://porto.zalt.me/ai/Intro).
 
 > "Simplicity is the ultimate sophistication." - Leonardo da Vinci
 
