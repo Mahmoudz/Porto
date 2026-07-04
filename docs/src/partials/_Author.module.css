@@ -1,0 +1,61 @@
+.wrapper {
+  text-align: center;
+  max-width: 640px;
+  margin: 1.5rem auto 0;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--ifm-color-primary);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.name {
+  margin: 1.5rem 0 0.25rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.role {
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.bio {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: left;
+  opacity: 0.85;
+  margin-bottom: 1.1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none !important;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.link:hover {
+  background-color: var(--ifm-color-primary);
+  color: #fff !important;
+  transform: translateY(-2px);
+}

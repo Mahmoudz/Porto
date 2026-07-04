@@ -1,0 +1,78 @@
+.wrapper {
+  max-width: 720px;
+  margin: 1rem auto 0;
+}
+
+.lede {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.langGroup {
+  margin-bottom: 2rem;
+}
+
+.langTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.cards {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color);
+  text-decoration: none !important;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.cardName {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ifm-font-color-base) !important;
+}
+
+.cardFramework {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  color: var(--ifm-font-color-base) !important;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.cta {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}

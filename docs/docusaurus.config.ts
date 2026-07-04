@@ -42,8 +42,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Mahmoudz/Porto/edit/master/docs/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -68,6 +67,7 @@ const config: Config = {
         path: 'docs-ai',
         routeBasePath: 'ai',
         sidebarPath: './sidebarsAi.ts',
+        editUrl: 'https://github.com/Mahmoudz/Porto/edit/master/docs/',
       },
     ],
   ],
@@ -75,7 +75,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/porto-logo.png',
     navbar: {
-      title: 'Porto AI Architecture',
+      title: 'Porto',
       logo: {
         alt: 'Porto AI Architecture Logo',
         src: 'img/porto-logo.png',

@@ -14,7 +14,7 @@ sidebar_position: 1
 
 **Porto** is a Scalable Software Architectural Pattern providing a robust framework of guidelines, principles, and patterns. It is designed to facilitate the creation of software that is scalable, maintainable, and reusable. Porto allows you to start with a clean monolith and expand to microservices as needed, thanks to its modular structure which facilitates easy scaling and separation of concerns. Its adherence to the single responsibility principle also makes the codebase easy for AI coding assistants to navigate and contribute to. If AI agents own the bulk of your code, see the [Porto AI](/ai/Intro) edition.
 
-<img src="/img/porto_ship_1.png" alt="Porto Components" style={{width: '100%'}} />
+![Porto Container layer diagram](/img/porto_container_1.png)
 
 ## Foundation
 
@@ -39,7 +39,7 @@ Refer to the cargo ship image for a visual representation of the layer relations
 
 <br/>
 <br/>
-![Porto Container layer diagram](/img/porto_container_1.png)
+<img src="/img/porto_ship_2.png" alt="Porto Components" style={{width: '100%'}} />
 <br/>
 <br/>
 

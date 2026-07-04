@@ -71,9 +71,9 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <EditionsPage />
         <WelcomePage />
         <HomepageFeatures />
+        <EditionsPage />
         <VideoPage />
         <SponsorsPage />
       </main>

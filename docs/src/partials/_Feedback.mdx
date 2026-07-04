@@ -1,0 +1,29 @@
+import styles from './_Feedback.module.css';
+
+<div className={styles.wrapper}>
+  <p className={styles.lede}>Your feedback is important.</p>
+  <p className={styles.body}>
+    <strong>Porto</strong> is continually evolving, and real usage is what shapes it.
+    If something in the docs is unclear, if a pattern doesn't fit your use case, or
+    if you just want to share how you're using it, reach out through whichever
+    channel is easiest.
+  </p>
+  <div className={styles.channels}>
+    <a className={styles.channel} href="https://github.com/Mahmoudz/Porto/issues" target="_blank" rel="noopener noreferrer">
+      <span className={styles.channelTitle}>Open an issue</span>
+      <span className={styles.channelDesc}>Bugs, unclear docs, missing patterns</span>
+    </a>
+    <a className={styles.channel} href="https://github.com/Mahmoudz/Porto/discussions" target="_blank" rel="noopener noreferrer">
+      <span className={styles.channelTitle}>Start a discussion</span>
+      <span className={styles.channelDesc}>Questions, ideas, how you're using Porto</span>
+    </a>
+    <a className={styles.channel} href="https://twitter.com/mahmoudz" target="_blank" rel="noopener noreferrer">
+      <span className={styles.channelTitle}>Message on Twitter</span>
+      <span className={styles.channelDesc}>@mahmoudz</span>
+    </a>
+    <a className={styles.channel} href="https://zalt.me/services" target="_blank" rel="noopener noreferrer">
+      <span className={styles.channelTitle}>Book a session</span>
+      <span className={styles.channelDesc}>Direct, hands-on help</span>
+    </a>
+  </div>
+</div>

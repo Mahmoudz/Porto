@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 640px;
+  margin: 1rem auto 0;
+}
+
+.lede {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ifm-color-primary) !important;
+}
+
+.cta:hover {
+  text-decoration: underline;
+}
