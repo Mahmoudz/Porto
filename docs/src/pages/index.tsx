@@ -12,31 +12,46 @@ import EditionsPage from "../components/EditionsPage";
 import SponsorsPage from "../components/SponsorsPage";
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   const headerImage = useBaseUrl("img/porto_ship_1.png");
 
   return (
     <header className={clsx("hero", styles.heroBanner)}>
+      <div className={styles.ocean} aria-hidden="true">
+        <div className={clsx(styles.wave, styles.waveBack)} />
+        <div className={clsx(styles.wave, styles.waveMid)} />
+        <div className={clsx(styles.wave, styles.waveMid2)} />
+        <div className={clsx(styles.wave, styles.waveFront)} />
+      </div>
+      <div className={styles.oceanScrim} aria-hidden="true" />
+      <div className={styles.oceanBottom} aria-hidden="true" />
       <div className={clsx("container", styles.heroInner)}>
         <div className={styles.heroText}>
           <Heading as="h1" className={clsx("hero__title", styles.heroTitle)}>
-            {siteConfig.title}
+            Porto AI
           </Heading>
           <p className={clsx("hero__subtitle", styles.heroTagline)}>
             A Software Architectural Pattern
           </p>
           <p className={styles.heroSub}>
-            Porto organizes large applications into clean, reusable building
-            blocks, a modular monolith that scales into microservices as you
-            grow, built for human engineers and AI agents to seamlessly
-            maintain, extend, and evolve.
+            Porto organizes large applications into independent business
+            components with clear boundaries and minimal coupling, letting you
+            start as a modular monolith and evolve into microservices only when
+            your architecture demands it.
+          </p>
+          <p className={styles.heroEditions}>
+            Choose <strong>Porto AI</strong> for AI-first development,
+            <br />
+            or <strong>Porto SAP</strong> for human-first development.
           </p>
           <div className={styles.buttons}>
-            <Link className={clsx("button", styles.heroButton)} to="/docs/Intro">
-              For Humans
-            </Link>
             <Link className={clsx("button", styles.heroButton)} to="/ai/Intro">
-              For AI
+              Porto AI · for Agents
+            </Link>
+            <Link
+              className={clsx("button", styles.heroButton, styles.heroButtonSecondary)}
+              to="/docs/Intro"
+            >
+              Porto SAP · for Humans
             </Link>
           </div>
         </div>

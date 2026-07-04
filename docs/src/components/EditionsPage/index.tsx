@@ -14,7 +14,7 @@ type Edition = {
 const EDITIONS: Edition[] = [
   {
     badge: 'Stable · Available now',
-    title: 'Porto for Humans',
+    title: 'Porto SAP',
     subtitle: 'Architecture you read, review, and control.',
     points: [
       'Human-readable structure and naming',
@@ -27,7 +27,7 @@ const EDITIONS: Edition[] = [
   },
   {
     badge: 'Private testing · Early access',
-    title: 'Porto for AI',
+    title: 'Porto AI',
     subtitle: 'Architecture built for autonomous agents.',
     points: [
       'Optimized for AI agents, not human reading',

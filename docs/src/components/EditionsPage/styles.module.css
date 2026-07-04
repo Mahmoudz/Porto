@@ -1,7 +1,6 @@
 .editions {
   padding: 4rem 0;
-  /* match the hero header background */
-  background-color: color-mix(in srgb, var(--ifm-background-color) 92%, #000);
+  background-color: var(--ifm-background-color);
 }
 
 .heading {

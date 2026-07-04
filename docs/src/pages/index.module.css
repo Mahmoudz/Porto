@@ -8,19 +8,120 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-  /* slightly darker than the page body */
-  background-color: color-mix(in srgb, var(--ifm-background-color) 92%, #000);
+  /* Dark ocean in BOTH themes: fades to the dark bg at top/bottom with a
+     teal band glowing through the lower middle. */
+  background: linear-gradient(
+    180deg,
+    #1b1b1d 0%,
+    #17414e 76%,
+    #1b1b1d 100%
+  );
+  /* Force light hero text in light mode too (infima defaults this dark). */
+  --ifm-hero-text-color: #eef2f4;
+  color: #eef2f4;
+}
+
+/* Animated ocean: layered SVG waves translating on the compositor. */
+.ocean {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  will-change: transform;
+}
+
+.waveBack {
+  height: 260px;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20120'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0,40%20C300,120%20900,-40%201200,40%20L1200,120%20L0,120%20Z'%20fill='%231d4b58'/%3E%3C/svg%3E");
+  animation: waveMove 26s linear infinite;
+}
+
+.waveMid {
+  height: 215px;
+  opacity: 0.6;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20120'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0,50%20C350,-20%20850,120%201200,50%20L1200,120%20L0,120%20Z'%20fill='%23236070'/%3E%3C/svg%3E");
+  animation: waveMove 18s linear infinite reverse;
+}
+
+.waveMid2 {
+  height: 180px;
+  opacity: 0.7;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20120'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0,55%20C250,10%20950,110%201200,55%20L1200,120%20L0,120%20Z'%20fill='%232c7488'/%3E%3C/svg%3E");
+  animation: waveMove 12s linear infinite;
+}
+
+.waveFront {
+  height: 145px;
+  opacity: 0.85;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20120'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0,60%20C300,110%20900,10%201200,60%20L1200,120%20L0,120%20Z'%20fill='%23174049'/%3E%3C/svg%3E");
+  animation: waveMove 8s linear infinite reverse;
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Left-side scrim: keeps hero text legible without darkening the whole ocean. */
+.oceanScrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.2) 45%,
+    transparent 70%
+  );
+}
+
+/* Bottom fade: melts the waves into the section below (uses the theme var). */
+.oceanBottom {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 62%,
+    #1b1b1d 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave {
+    animation: none;
+  }
 }
 
 .heroInner {
   display: flex;
   align-items: center;
   gap: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .heroText {
   flex: 0 0 50%;
   max-width: 50%;
+  /* Hero is a dark ocean in both themes, so text stays light in light mode too. */
+  color: #eef2f4;
 }
 
 .heroVisual {
@@ -71,24 +172,37 @@
 .heroSub {
   font-size: 1.2rem;
   line-height: 1.65;
-  max-width: 42ch;
-  opacity: 0.7;
-  margin-bottom: 2.5rem;
+  max-width: 44ch;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+
+/* Edition-choice line: smaller and muted, with the product names highlighted. */
+.heroEditions {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 46ch;
+  margin-bottom: 2.25rem;
+  color: #aeb8bd;
+}
+
+.heroEditions strong {
+  color: #fff;
+  font-weight: 700;
 }
 
 .buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .heroButton {
-  flex: 0 0 auto;
-  width: 12.5rem;
+  width: 22rem;
+  max-width: 100%;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -105,4 +219,10 @@
   border-color: var(--ifm-color-primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Secondary (Porto SAP) button: ghost until hover. */
+.heroButtonSecondary {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
 }

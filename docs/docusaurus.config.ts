@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Porto SAP',
+  title: 'Porto AI Architecture',
   tagline: 'Scalable Software Architectural Pattern',
   favicon: 'img/porto-favicon.png',
 
@@ -37,7 +37,7 @@ const config: Config = {
     [
       'classic',
       {
-        // Default docs instance = "Porto for Humans".
+        // Default docs instance = "Porto SAP".
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
@@ -60,7 +60,7 @@ const config: Config = {
   ],
 
   plugins: [
-    // Second docs instance = "Porto for AI" (separate product, separate tree).
+    // Second docs instance = "Porto AI" (separate product, separate tree).
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -75,9 +75,9 @@ const config: Config = {
   themeConfig: {
     image: 'img/porto-logo.png',
     navbar: {
-      title: 'Porto SAP',
+      title: 'Porto AI Architecture',
       logo: {
-        alt: 'Porto SAP Logo',
+        alt: 'Porto AI Architecture Logo',
         src: 'img/porto-logo.png',
       },
       items: [
@@ -87,11 +87,11 @@ const config: Config = {
           items: [
             {
               href: '/docs/Intro',
-              label: 'for Humans',
+              label: 'Porto SAP · for Humans',
             },
             {
               href: '/ai/Intro',
-              label: 'for AI',
+              label: 'Porto AI · for Agents',
             },
           ],
         },
@@ -105,7 +105,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright © 2016 - ${new Date().getFullYear()} - Porto SAP. Maintained by <a href="https://zalt.me" target="_blank" rel="noopener noreferrer">Mahmoud Zalt</a>, also building <a href="https://sistava.com" target="_blank" rel="noopener noreferrer">Sistava</a> at <a href="https://sista.ai" target="_blank" rel="noopener noreferrer">Sista AI</a>.`,
+      copyright: `Copyright © 2016 - ${new Date().getFullYear()} - Porto AI Architecture. Maintained by <a href="https://zalt.me" target="_blank" rel="noopener noreferrer">Mahmoud Zalt</a>, also building <a href="https://sistava.com" target="_blank" rel="noopener noreferrer">Sistava</a> at <a href="https://sista.ai" target="_blank" rel="noopener noreferrer">Sista AI</a>.`,
     },
     prism: {
       theme: prismThemes.github,
